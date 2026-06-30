@@ -1,5 +1,9 @@
 <h1 align="center">Claude/GPT API中转站 - 乐沃联AI</h1>
 
+<p align="center">
+  <a href="README_EN.md">📖 English README</a>
+</p>
+
 <div align="center">
 
 ![Stars](https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social)
