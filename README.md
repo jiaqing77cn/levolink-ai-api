@@ -239,15 +239,7 @@ resp = client.chat.completions.create(
 )
 ```
 
----
 
-## 📈 SEO 关键词
-
-> 本仓库致力于为国内开发者提供最稳定的 Claude/GPT/Gemini/DeepSeek API 中转解决方案。
->
-> 相关搜索词：**Claude API中转站**、**GPT API中转站**、**国内Claude API**、**Gemini API国内调用**、**DeepSeek API中转站**、**Claude Code配置中转站**、**Cursor Claude API配置**、**Dify Claude API接入**、**FastGPT API中转配置**、**n8n Claude配置中转**、**API中转站推荐**、**Claude中转站哪家好**、**GPT中转站价格对比**、**Claude Sonnet API中转**、**Claude Opus 4.7中转站**、**API中转站新手入门**、**中转站免翻墙直连**、**Claude API避坑**、**API中转站可靠性检测**、**DeepSeek R1 API中转**
-
----
 
 <div align="center">
 
