@@ -77,7 +77,7 @@ client = OpenAI(api_key="你的API Key", base_url="https://ai.levolink.com/v1")
 
 1. 访问 [ai.levolink.com](https://ai.levolink.com) 注册账号
 2. 登录控制台 → 创建 API Key
-3. 充值余额（支持支付宝/微信，最低 5 元起充）
+3. 充值余额（支持支付宝/微信，最低 1 元起充）
 
 ### 第二步：Python 调用
 
