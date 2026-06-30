@@ -198,6 +198,11 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 
 ![价格页面](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/pricing.jpg)
 
+## 🖥️ 控制台界面
+
+![控制台](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
+(https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/pricing.jpg)
+
 ## ❓ 常见问题
 
 **响应内容和官方一致吗？**  
