@@ -18,7 +18,7 @@
 
 ---
 
-## 🌐 产品截图
+## 🌐 网站首页截图
 
 ![官网首页](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/homepage.jpg)
 
