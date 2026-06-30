@@ -12,8 +12,6 @@
 
 [🌐 官网](https://ai.levolink.com) · [📋 价格表](https://ai.levolink.com/pricing) · [📖 API文档](https://levolink.apifox.cn/) · [💬 加入交流](https://ai.levolink.com)
 
-> 适用于：Claude Code / Cursor / Dify / FastGPT / n8n / LangChain / NextChat / Cherry Studio / Open Interpreter
-
 </div>
 
 ---
@@ -39,11 +37,9 @@
 
 ## 🚀 快速开始
 
-### 获取 API Key
+访问 [ai.levolink.com](https://ai.levolink.com) → 注册 → 控制台创建 Key → 充值（最低 1 元起充）
 
-访问 [ai.levolink.com](https://ai.levolink.com) → 注册账号 → 控制台创建 Key → 充值（最低 1 元起充）
-
-### Python 接入
+### Python 接入（通用）
 
 ```python
 from openai import OpenAI
@@ -58,27 +54,32 @@ resp = client.chat.completions.create(
     model="gpt-4o",
     messages=[{"role": "user", "content": "用Python写一个快速排序"}]
 )
-print(resp.choices[0].message.content)
-```
 
-### Claude 模型
-
-```python
+# Claude Sonnet 4.6
 resp = client.chat.completions.create(
     model="claude-sonnet-4-20250514",
     messages=[{"role": "user", "content": "解释量子计算"}],
     extra_body={"anthropic_version": "vertex-2023-10-01"}
 )
+
+# DeepSeek R1
+resp = client.chat.completions.create(
+    model="deepseek-reasoner",
+    messages=[{"role": "user", "content": "用Python实现一个web服务器"}]
+)
 ```
 
-### Claude Code（3 分钟配置）
+---
+
+## 🛠️ 支持的工具（全部兼容）
+
+### Claude Code / Claude Desktop
 
 ```bash
-# 安装 Claude Code
+# Claude Code — 安装并配置环境变量
 npm install -g @anthropic-ai/claude-code
 
-# 配置环境变量
-echo 'export ANTHROPIC_AUTH_TOKEN="你的Key"' >> ~/.bash_profile
+echo 'export ANTHROPIC_AUTH_TOKEN="你的API Key"' >> ~/.bash_profile
 echo 'export ANTHROPIC_BASE_URL="https://ai.levolink.com/v1"' >> ~/.bash_profile
 source ~/.bash_profile
 
@@ -86,29 +87,93 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
+> Claude Desktop 用户：设置 → Advanced Settings → 填入 `ANTHROPIC_API_KEY` 和 `ANTHROPIC_BASE_URL=https://ai.levolink.com/v1`
+
+### Codex（ChatGPT / Cursor CLI）
+
+```bash
+# 安装 Codex
+npm install -g @openai/codex
+
+# 配置环境变量
+export OPENAI_API_KEY="你的API Key"
+export OPENAI_API_BASE="https://ai.levolink.com/v1"
+
+# 或配置 ~/.config/codex/config.json：
+# { "api_key": "xxx", "base_url": "https://ai.levolink.com/v1" }
+```
+
+### Gemini CLI
+
+```bash
+# 安装 Gemini CLI
+npm install -g @google/gemini-cli
+
+# 配置（通过 --api-key 和 --base-url 参数或环境变量）
+export GEMINI_API_KEY="你的API Key"
+export GEMINI_API_BASE="https://ai.levolink.com/v1"
+```
+
+> 注意：Gemini CLI 部分版本需通过 `--endpoint` 参数指定自定义端点
+
+### OpenClaw / Hermes Agent
+
+OpenClaw 和 Hermes Agent 均基于 OpenAI 兼容格式，配置方式相同：
+
+```bash
+# OpenClaw — 在配置中设置
+# openclaw.yaml 或环境变量：
+openai_api_key: 你的API Key
+openai_api_base: https://ai.levolink.com/v1
+
+# Hermes Agent — 同样适用
+hermes config set api_key 你的API Key
+hermes config set base_url https://ai.levolink.com/v1
+```
+
+### OpenCode
+
+```bash
+# 安装 OpenCode
+pip install opencode
+
+# 配置
+export OPENAI_API_KEY="你的API Key"
+export OPENAI_API_BASE="https://ai.levolink.com/v1"
+```
+
+### Cursor IDE
+
+设置 → 环境变量添加：
+```
+ANTHROPIC_API_KEY=你的API Key
+ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
+```
+
 ---
 
-## 🖥️ 主流工具接入
+## 🖥️ 主流工作流工具接入
 
 | 工具 | 配置方式 |
 |------|---------|
-| **Cursor IDE** | 设置 → 环境变量添加 `ANTHROPIC_API_KEY` 和 `ANTHROPIC_BASE_URL=https://ai.levolink.com/v1` |
-| **Dify / FastGPT** | 在 API 设置中填入 Key 和 Base URL：`https://ai.levolink.com/v1` |
-| **n8n** | HTTP Request 节点 → URL：`https://ai.levolink.com/v1/chat/completions`，Header 填 `Authorization: Bearer 你的Key` |
+| **Dify / FastGPT** | API 设置填入 Key + Base URL：`https://ai.levolink.com/v1` |
+| **n8n** | HTTP Request → URL：`https://ai.levolink.com/v1/chat/completions`，Header：`Authorization: Bearer 你的Key` |
 | **LangChain** | `ChatOpenAI(openai_api_key="Key", openai_api_base="https://ai.levolink.com/v1")` |
-| **NextChat** | 设置 → 自定义 API → API 地址：`https://ai.levolink.com/v1`，填入 Key |
+| **NextChat** | 设置 → 自定义 API → URL：`https://ai.levolink.com/v1` |
 
 ---
 
 ## 💡 典型使用场景
 
-**AI 编程** — Claude Code / Cursor 配置后，直接用 Claude 4.7 做代码重构、Bug 修复、长上下文分析，响应速度快，不掉线。
+**AI 编程** — Claude Code / Codex / OpenCode 配置后，直接用 Claude 4.7 / GPT-4o 做代码重构、Bug 修复、长上下文分析，响应快，不掉线。
 
-**自动化工作流** — n8n / FastGPT / Dify 接入后，一个 Key 调用所有模型，客服机器人、数据分析、内容生成全部搞定。
+**长文本处理** — 10 万字文档分析、合同审核、论文总结。Claude Opus 4.7 的 200K 上下文，官方中转延迟高，乐沃联AI国内 CDN 加速后快 3-10 倍。
 
-**长文本处理** — 10 万字文档分析、合同审核、论文总结。Claude Opus 4.7 的 200K 上下文能力，官方中转延迟高，乐沃联AI国内 CDN 加速后快 3-10 倍。
+**自动化 Agent** — OpenClaw / Hermes Agent / Gemini CLI 一个 Key 调度所有模型，支持多 Agent 并行，适用复杂任务拆解。
 
-**RAG 与知识库** — DeepSeek / GPT-4o 对接向量数据库，企业知识库问答、智能客服，一个 Key 按需切换模型。
+**RAG 与知识库** — DeepSeek / GPT-4o 对接向量数据库，企业知识库问答，一个 Key 按需切换模型。
+
+**自动化工作流** — n8n / FastGPT / Dify 接入后，客服机器人、数据分析、内容生成全流程自动化。
 
 ---
 
