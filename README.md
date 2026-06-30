@@ -18,7 +18,7 @@
 
 ## 📌 什么是 API 中转站？
 
-**API 中转站**（也叫 API 代理/转发站）是一种帮助国内开发者**无需翻墙即可稳定调用海外 AI 模型 API**的服务。通过将你的请求转发到 Anthropic、OpenAI、Google 等官方接口，中转站让 Claude GPT、Gemini、DeepSeek 等全球顶级模型在国内网络环境下也能高速访问。
+**API 中转站**（也叫 Claude API中转站 / GPT API中转站 / AI API代理）是一种帮助**国内开发者无需翻墙即可稳定调用海外 AI 模型 API**的服务。通过专线转发到 Anthropic、OpenAI、Google 等官方接口，Claude GPT、Gemini、DeepSeek 等全球顶级模型在国内网络环境下也能高速访问。
 
 ### 核心痛点 vs 中转站解决方案
 
@@ -65,8 +65,8 @@ client = OpenAI(api_key="你的API Key", base_url="https://ai.levolink.com/v1")
 ✅ Claude Code      ✅ Cursor / Continue  ✅ Dify / FastGPT
 ✅ n8n / LangChain  ✅ NextChat           ✅ Cherry Studio
 ✅ AnythingLLM     ✅ Open Interpreter   ✅ Codeium
-✅ Wordware        ✅ Seal                 ✅ Perplexity
-✅ CustomGPT       ✅ Vercel AI SDK       ✅ Spring AI
+✅ Wordware        ✅ Seal               ✅ Perplexity
+✅ CustomGPT       ✅ Vercel AI SDK      ✅ Spring AI
 ```
 
 ---
@@ -85,7 +85,7 @@ client = OpenAI(api_key="你的API Key", base_url="https://ai.levolink.com/v1")
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="LVK-xxxxxxxxxxxx",      # 替换为你的 Key
+    api_key="***",      # 替换为你的 Key
     base_url="https://ai.levolink.com/v1"
 )
 
@@ -154,7 +154,7 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 Dify 示例：
 ```
 curl https://ai.levolink.com/v1/chat/completions \
-  -H "Authorization: Bearer LVK-xxx" \
+  -H "Authorization: Bearer 你的Key" \
   -H "Content-Type: application/json" \
   -d '{"model":"gpt-4o","messages":[{"role":"user","content":"Hello"}]}'
 ```
@@ -200,7 +200,7 @@ curl https://ai.levolink.com/v1/chat/completions \
 
 ## 🔄 国内调用 Claude/GPT 完整指南
 
-### Claude 4.7 / 4.6 调用
+### Claude Opus 4.7 / Sonnet 4.6 调用
 
 ```python
 from openai import OpenAI
@@ -221,11 +221,11 @@ for model in models:
     print(f"{model}: {resp.choices[0].message.content[:50]}")
 ```
 
-### DeepSeek 调用
+### DeepSeek R1 / V4 调用
 
 ```python
 resp = client.chat.completions.create(
-    model="deepseek-chat",  # 或 deepseek-coder
+    model="deepseek-chat",  # 或 deepseek-coder / deepseek-reasoner
     messages=[{"role": "user", "content": "用Python实现一个web服务器"}]
 )
 ```
@@ -243,7 +243,9 @@ resp = client.chat.completions.create(
 
 ## 📈 SEO 关键词
 
-> 本仓库致力于为国内开发者提供最稳定的 Claude/GPT/Gemini/DeepSeek API 中转解决方案。相关搜索词包括：Claude API中转站、GPT API中转站、国内Claude API、Gemini API中转、DeepSeek API中转、Claude Code配置、API中转站推荐、AI API代理。
+> 本仓库致力于为国内开发者提供最稳定的 Claude/GPT/Gemini/DeepSeek API 中转解决方案。
+>
+> 相关搜索词：**Claude API中转站**、**GPT API中转站**、**国内Claude API**、**Gemini API国内调用**、**DeepSeek API中转站**、**Claude Code配置中转站**、**Cursor Claude API配置**、**Dify Claude API接入**、**FastGPT API中转配置**、**n8n Claude配置中转**、**API中转站推荐**、**Claude中转站哪家好**、**GPT中转站价格对比**、**Claude Sonnet API中转**、**Claude Opus 4.7中转站**、**API中转站新手入门**、**中转站免翻墙直连**、**Claude API避坑**、**API中转站可靠性检测**、**DeepSeek R1 API中转**
 
 ---
 
