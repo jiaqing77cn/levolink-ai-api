@@ -8,7 +8,7 @@
 
 **国内稳定直连 · 500+模型聚合 · OpenAI/Claude/Gemini/DeepSeek**
 
-[🌐 官网](https://ai.levolink.com) · [📋 价格表](https://ai.levolink.com/pricing) · [📖 API文档](https://ai.levolink.com/docs)
+[🌐 官网](https://ai.levolink.com) · [📋 价格表](https://ai.levolink.com/pricing) · [📖 API文档](https://levolink.apifox.cn/)
 
 </div>
 
