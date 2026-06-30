@@ -227,7 +227,7 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 新用户注册赠送体验额度，可先试用再决定是否充值。
 
 **可以开发票吗？**  
-可以，联系 [ai.levolink.com](https://ai.levolink.com) 客服咨询。
+可以。个人设置→实名认证→钱包→选择开票，电子发票5个工作日内开出发送到电子邮箱。
 
 ---
 
