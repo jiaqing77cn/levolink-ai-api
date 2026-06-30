@@ -7,6 +7,7 @@
 ![Stars](https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social)
 ![Forks](https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green?style=flat)
 ![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat)
 ![CDN](https://img.shields.io/badge/CDN-国内加速-3b82f6?style=flat)
 
@@ -209,7 +210,6 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 ## 🖥️ 控制台界面
 
 ![控制台](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
-(https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/pricing.jpg)
 
 ## ❓ 常见问题
 
