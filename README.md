@@ -1,7 +1,16 @@
-<h1 align="center">Claude/GPT API中转站 - 乐沃联AI</h1>
+<!--
+SEO Keywords: AI API proxy, Claude API, GPT API, OpenAI compatible, China API access,
+LLM gateway, API middleware, 500+ models, DeepSeek API, Gemini API, Claude Code,
+API中转站, 国内直连, AI代理, Claude中转, GPT中转, OpenAI代理
+Description: AI API proxy for China — access 500+ models (Claude/GPT/Gemini/DeepSeek) without VPN. OpenAI-compatible, low latency, Claude Code ready.
+-->
+
+<h1 align="center">AI API Proxy — Claude/GPT/Gemini/DeepSeek 中转站 | 乐沃联 Levolink AI</h1>
 
 <p align="center">
-  <a href="README_EN.md">📖 English README</a>
+  <a href="README_EN.md">📖 English README</a> ·
+  <a href="https://levolink.apifox.cn/">📖 API 文档</a> ·
+  <a href="https://ai.levolink.com/pricing">📋 价格</a>
 </p>
 
 <div align="center">
@@ -9,21 +18,21 @@
 ![Stars](https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social)
 ![Forks](https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green?style=flat)
 ![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat)
 ![CDN](https://img.shields.io/badge/CDN-国内加速-3b82f6?style=flat)
+![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat)
 
 **国内稳定直连 · 500+模型聚合 · OpenAI兼容格式 · Claude Code即插即用**
 
-[🌐 官网](https://ai.levolink.com) · [📋 价格表](https://ai.levolink.com/pricing) · [📖 API文档](https://levolink.apifox.cn/) · [💬 加入交流](https://ai.levolink.com)
+[🌐 Levolink AI 官网](https://ai.levolink.com) · [📋 价格表](https://ai.levolink.com/pricing) · [📖 API文档](https://levolink.apifox.cn/) · [💬 加入交流](https://ai.levolink.com)
 
 </div>
 
 ---
 
-## 🌐 网站首页截图
+## 🌐 产品预览
 
-![官网首页](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/homepage.jpg)
+![Levolink AI 首页 — 500+ AI 模型 API 中转站控制台](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/homepage.jpg)
 
 ---
 
@@ -48,7 +57,7 @@
 
 ## 🚀 快速开始
 
-访问 [ai.levolink.com](https://ai.levolink.com) → 注册 → 控制台创建 Key → 充值（最低 1 元起充）
+前往 [Levolink AI 平台](https://ai.levolink.com) → 注册 → 控制台创建 Key → 充值（最低 1 元起充）
 
 ### Python 接入（通用）
 
@@ -79,6 +88,8 @@ resp = client.chat.completions.create(
     messages=[{"role": "user", "content": "用Python实现一个web服务器"}]
 )
 ```
+
+> 💡 完整示例代码见 [`examples/`](examples/) 目录，包含 Python、Node.js、curl 示例。
 
 ---
 
@@ -178,7 +189,7 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 
 **AI 编程** — Claude Code / Codex / OpenCode 配置后，直接用 Claude 4.7 / GPT-4o 做代码重构、Bug 修复、长上下文分析，响应快，不掉线。
 
-**长文本处理** — 10 万字文档分析、合同审核、论文总结。Claude Opus 4.7 的 200K 上下文，官方中转延迟高，乐沃联AI国内 CDN 加速后快 3-10 倍。
+**长文本处理** — 10 万字文档分析、合同审核、论文总结。Claude Opus 4.7 的 200K 上下文，官方中转延迟高，[Levolink AI](https://ai.levolink.com) 国内 CDN 加速后快 3-10 倍。
 
 **自动化 Agent** — OpenClaw / Hermes Agent / Gemini CLI 一个 Key 调度所有模型，支持多 Agent 并行，适用复杂任务拆解。
 
@@ -190,7 +201,7 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 
 ## 📊 对比同类方案
 
-| | 乐沃联AI | 硅基流动 | 神马中转 | 自建代理 |
+| | [Levolink AI](https://ai.levolink.com) | 硅基流动 | 神马中转 | 自建代理 |
 |--|---------|---------|---------|---------|
 | 模型数量 | **500+** | 较少 | 较少 | 需手动维护 |
 | 国内 CDN 加速 | ✅ | 一般 | ✅ | ❌ |
@@ -199,27 +210,27 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 | Claude Code 兼容 | ✅ | ✅ | ✅ | ❌ |
 | OpenAI 格式 | ✅ | ✅ | ✅ | 需适配 |
 
-完整价格：[ai.levolink.com/pricing](https://ai.levolink.com/pricing)
+完整价格：[Levolink AI 定价页面](https://ai.levolink.com/pricing)
 
 ---
 
+## 📸 价格页面
 
-
-## 📸 价格页面截图
-
-![价格页面](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/pricing.jpg)
+![Levolink AI 价格页面 — 按 token 量计费，最低 1 元起充](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/pricing.jpg)
 
 ## 🖥️ 控制台界面
 
-![控制台](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
+![Levolink AI 控制台 — 创建 API Key、查看用量、账户充值](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
+
+---
 
 ## ❓ 常见问题
 
 **响应内容和官方一致吗？**  
-完全一致。乐沃联AI仅做请求转发，底层调用官方模型，响应内容与官方 API 完全相同。
+完全一致。[Levolink AI](https://ai.levolink.com) 仅做请求转发，底层调用官方模型，响应内容与官方 API 完全相同。
 
 **会被封号吗？**  
-不会。你使用的是乐沃联AI的 Key，不走官方账号体系，无封号风险。
+不会。你使用的是 Levolink AI 的 Key，不走官方账号体系，无封号风险。
 
 **支持 streaming 吗？**  
 支持，所有模型均支持流式输出，延迟低，实时性好。
@@ -251,13 +262,13 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 
 ## 💰 赞助
 
-*如果您或您的公司使用此项目，欢迎[联系我们](https://ai.levolink.com)赞助支持。*
+*如果您或您的公司使用此项目，欢迎[联系 Levolink AI](https://ai.levolink.com)赞助支持。*
 
 ---
 
 ## 📜 License
 
-MIT License · Copyright (c) 2026 乐沃联AI
+MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
 
 ---
 
@@ -265,8 +276,8 @@ MIT License · Copyright (c) 2026 乐沃联AI
 
 ⭐ 如果对你有帮助，请点个 Star 支持一下！
 
-📦 官网：[ai.levolink.com](https://ai.levolink.com)  
-📂 仓库：[github.com/jiaqing77cn/levolink-ai-api](https://github.com/jiaqing77cn/levolink-ai-api)  
-📖 文档：[levolink.apifox.cn](https://levolink.apifox.cn/)
+📦 官网：[Levolink AI](https://ai.levolink.com)  
+📂 仓库：[levolink-ai-api on GitHub](https://github.com/jiaqing77cn/levolink-ai-api)  
+📖 文档：[Levolink API Docs](https://levolink.apifox.cn/)
 
 </div>

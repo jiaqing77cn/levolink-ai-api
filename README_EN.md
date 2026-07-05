@@ -1,4 +1,11 @@
-<h1 align="center">Claude/GPT API Proxy - Levolink AI</h1>
+<!--
+SEO Keywords: AI API proxy, Claude API proxy, GPT API proxy, OpenAI compatible API,
+China API access, LLM gateway, API middleware, 500+ AI models, DeepSeek API,
+Gemini API, Claude Code config, API forwarding, low latency AI API
+Description: AI API proxy for China — access 500+ models (Claude/GPT/Gemini/DeepSeek) without VPN. OpenAI-compatible, low latency, Claude Code ready.
+-->
+
+<h1 align="center">AI API Proxy — Claude/GPT/Gemini/DeepSeek for China | Levolink AI</h1>
 
 <div align="center">
 
@@ -7,10 +14,11 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat)
 ![CDN](https://img.shields.io/badge/CDN-China%20加速-3b82f6?style=flat)
+![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat)
 
 **Stable China Access · 500+ Models · OpenAI Compatible · Claude Code Ready**
 
-[🌐 Website](https://ai.levolink.com) · [📋 Pricing](https://ai.levolink.com/pricing) · [📖 API Docs](https://levolink.apifox.cn/) · [💬 Contact](https://ai.levolink.com)
+[🌐 Levolink AI Website](https://ai.levolink.com) · [📋 Pricing](https://ai.levolink.com/pricing) · [📖 API Docs](https://levolink.apifox.cn/) · [💬 Contact](https://ai.levolink.com)
 
 > Works with: Claude Code / Cursor / Dify / FastGPT / n8n / LangChain / NextChat / Cherry Studio / Open Interpreter
 
@@ -20,7 +28,7 @@
 
 ## 🌐 Product Preview
 
-![Homepage](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/homepage.jpg)
+![Levolink AI homepage — 500+ AI model API proxy dashboard](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/homepage.jpg)
 
 ---
 
@@ -45,7 +53,7 @@ A **Claude/GPT API proxy** that helps developers in China access Claude, GPT, Ge
 
 ## 🚀 Quick Start
 
-Get your API key at [ai.levolink.com](https://ai.levolink.com) → Register → Console → Create Key → Top up (min 1 yuan)
+Get your API key at [Levolink AI platform](https://ai.levolink.com) → Register → Console → Create Key → Top up (min 1 yuan)
 
 ### Python
 
@@ -53,7 +61,7 @@ Get your API key at [ai.levolink.com](https://ai.levolink.com) → Register → 
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="***",
+    api_key="your-api-key",
     base_url="https://ai.levolink.com/v1"
 )
 
@@ -76,6 +84,8 @@ resp = client.chat.completions.create(
     messages=[{"role": "user", "content": "Implement a web server in Python"}]
 )
 ```
+
+> 💡 Full code examples in [`examples/`](examples/) — Python, Node.js, curl.
 
 ---
 
@@ -155,7 +165,7 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 
 **AI Coding** — Configure Claude Code / Codex / OpenCode and use Claude 4.7 or GPT-4o for code refactoring, bug fixes, and long-context analysis with stable, fast responses.
 
-**Long Document Processing** — 100K-word document analysis, contract review, paper summarization. Claude Opus 4.7's 200K context window, accelerated by Levolink CDN — 3-10x faster than official proxies.
+**Long Document Processing** — 100K-word document analysis, contract review, paper summarization. Claude Opus 4.7's 200K context window, accelerated by [Levolink AI CDN](https://ai.levolink.com) — 3-10x faster than official proxies.
 
 **AI Agents** — OpenClaw / Hermes Agent / Gemini CLI with one key for all models, supporting multi-agent parallel tasks.
 
@@ -167,7 +177,7 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 
 ## 📊 Comparison
 
-| | Levolink AI | SiliconFlow | Other Proxies | Self-Built |
+| | [Levolink AI](https://ai.levolink.com) | SiliconFlow | Other Proxies | Self-Built |
 |--|-------------|-------------|---------------|------------|
 | Model count | **500+** | Fewer | Fewer | Manual |
 | China CDN | ✅ | Average | ✅ | ❌ |
@@ -176,20 +186,20 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 | Claude Code ready | ✅ | ✅ | ✅ | ❌ |
 | OpenAI format | ✅ | ✅ | ✅ | Needs adapter |
 
-Full pricing: [ai.levolink.com/pricing](https://ai.levolink.com/pricing)
+Full pricing: [Levolink AI pricing page](https://ai.levolink.com/pricing)
 
 ---
 
 ## 🖥️ Dashboard
 
-![Dashboard](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
+![Levolink AI dashboard — create API keys, view usage, top up account](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
 
 ---
 
 ## ❓ FAQ
 
 **Are responses identical to the official API?**  
-Yes. Levolink AI only forwards requests to the official models — responses are byte-for-byte identical.
+Yes. [Levolink AI](https://ai.levolink.com) only forwards requests to the official models — responses are byte-for-byte identical.
 
 **Can my account get banned?**  
 No. You use Levolink AI's key, not the official account system — no ban risk.
@@ -224,13 +234,13 @@ Yes. Settings → Identity Verification → Wallet → Invoice. E-invoice issued
 
 ## 💰 Sponsorship
 
-*If you or your company uses this project, [contact us](https://ai.levolink.com) to sponsor.*
+*If you or your company uses this project, [contact Levolink AI](https://ai.levolink.com) to sponsor.*
 
 ---
 
 ## 📜 License
 
-MIT License · Copyright (c) 2026 Levolink AI
+MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
 
 ---
 
@@ -238,8 +248,8 @@ MIT License · Copyright (c) 2026 Levolink AI
 
 ⭐ If this helps you, please give it a Star!
 
-📦 Website: [ai.levolink.com](https://ai.levolink.com)  
-📂 Repo: [github.com/jiaqing77cn/levolink-ai-api](https://github.com/jiaqing77cn/levolink-ai-api)  
-📖 Docs: [levolink.apifox.cn](https://levolink.apifox.cn/)
+📦 Website: [Levolink AI](https://ai.levolink.com)  
+📂 Repo: [levolink-ai-api on GitHub](https://github.com/jiaqing77cn/levolink-ai-api)  
+📖 Docs: [Levolink API Docs](https://levolink.apifox.cn/)
 
 </div>

@@ -1,0 +1,2 @@
+# Levolink AI API Proxy — Examples Dependencies
+openai>=1.0.0
