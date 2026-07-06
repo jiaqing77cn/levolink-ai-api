@@ -85,7 +85,7 @@ resp = client.chat.completions.create(
 )
 ```
 
-> 💡 Full code examples in [`examples/`](examples/) — Python, Node.js, curl.
+> 💡 Full code examples in [`examples/`](https://github.com/jiaqing77cn/levolink-ai-api/tree/main/examples) — Python, Node.js, curl.
 
 ---
 
@@ -223,6 +223,9 @@ Yes. Settings → Identity Verification → Wallet → Invoice. E-invoice issued
 - 🐛 Bug report → [Open an Issue](https://github.com/jiaqing77cn/levolink-ai-api/issues)
 - 📝 Improve docs → Submit a PR
 - 💡 Feature request → [Start a Discussion](https://github.com/jiaqing77cn/levolink-ai-api/discussions)
+- 📋 Contributing guide → See [CONTRIBUTING.md](https://github.com/jiaqing77cn/levolink-ai-api/blob/main/CONTRIBUTING.md)
+- 📄 Changelog → See [CHANGELOG.md](https://github.com/jiaqing77cn/levolink-ai-api/blob/main/CHANGELOG.md)
+- 🔒 Security → See [SECURITY.md](https://github.com/jiaqing77cn/levolink-ai-api/blob/main/SECURITY.md)
 
 ---
 

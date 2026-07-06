@@ -89,7 +89,7 @@ resp = client.chat.completions.create(
 )
 ```
 
-> 💡 完整示例代码见 [`examples/`](examples/) 目录，包含 Python、Node.js、curl 示例。
+> 💡 完整示例代码见 [`examples/`](https://github.com/jiaqing77cn/levolink-ai-api/tree/main/examples) 目录，包含 Python、Node.js、curl 示例。
 
 ---
 
@@ -251,6 +251,9 @@ ANTHROPIC_BASE_URL=https://ai.levolink.com/v1
 - 🐛 发现 Bug → 提交 [Issue](https://github.com/jiaqing77cn/levolink-ai-api/issues)
 - 📝 优化文档 → 直接提交 PR
 - 💡 新功能建议 → 发起 [Discussion](https://github.com/jiaqing77cn/levolink-ai-api/discussions)
+- 📋 贡献指南 → 见 [CONTRIBUTING.md](https://github.com/jiaqing77cn/levolink-ai-api/blob/main/CONTRIBUTING.md)
+- 📄 更新日志 → 见 [CHANGELOG.md](https://github.com/jiaqing77cn/levolink-ai-api/blob/main/CHANGELOG.md)
+- 🔒 安全问题 → 见 [SECURITY.md](https://github.com/jiaqing77cn/levolink-ai-api/blob/main/SECURITY.md)
 
 ---
 
