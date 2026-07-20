@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Levolink AI Pricing Generator
-从 API 拉取实时价格，生成 Markdown 表格写入 README.md
+从 API 拉取实时价格，生成 Markdown 表格写入 README.md (中英文)
 """
 
 import json
@@ -23,29 +23,55 @@ def fetch_pricing():
     return data.get("data", {})
 
 
-def shorten_name(name):
+# --- Group name shortening ---
+
+SHORT_MAP_CN = {
+    "支持所有模型;GPT、Claude 它们由Azure+mj快速+其他模型官方": "默认(Azure+MJ)",
+    "严选国内顶尖 AI 引擎，具备 99.9% 生产级稳定性。专为核心业务与高频使用设计，为您提供最稳健、最专业的智能支持。": "企业级高可用",
+    "首调aws，有少量vertex企业级和azure的claude": "AWS企业级",
+    "gemini-cli 和anti 混合": "Gemini-CLI混合",
+    "限时体验分组": "限时体验",
+    "限时特价系列": "限时特价",
+    "优质官转OpenAI": "官转OpenAI",
+    "优质官转gemini": "官转Gemini",
+    "优质官转gemini2": "官转Gemini2",
+    "优质官方Gemini": "优质Gemini",
+    "正价充值anthropic 官方克劳德": "正价官转Claude",
+    "anti和kiro渠道": "anti/kiro",
+    "Claude Code专属特供": "CC专属",
+    "Codex专属特供": "Codex专属",
+    "awsb+awsp": "AWS-B+P",
+    "官+aws渠道": "官+AWS",
+    "直连Gemini 资源为Vertex ai": "直连Vertex",
+}
+
+SHORT_MAP_EN = {
+    "支持所有模型;GPT、Claude 它们由Azure+mj快速+其他模型官方": "Default(Azure+MJ)",
+    "严选国内顶尖 AI 引擎，具备 99.9% 生产级稳定性。专为核心业务与高频使用设计，为您提供最稳健、最专业的智能支持。": "Enterprise",
+    "首调aws，有少量vertex企业级和azure的claude": "AWS Enterprise",
+    "gemini-cli 和anti 混合": "Gemini-CLI Mix",
+    "限时体验分组": "Flash Trial",
+    "限时特价系列": "Flash Sale",
+    "优质官转OpenAI": "Premium OpenAI",
+    "优质官转gemini": "Premium Gemini",
+    "优质官转gemini2": "Premium Gemini2",
+    "优质官方Gemini": "Quality Gemini",
+    "正价充值anthropic 官方克劳德": "Official Premium",
+    "anti和kiro渠道": "anti/kiro",
+    "Claude Code专属特供": "CC Exclusive",
+    "Codex专属特供": "Codex Exclusive",
+    "awsb+awsp": "AWS-B+P",
+    "官+aws渠道": "Official+AWS",
+    "直连Gemini 资源为Vertex ai": "Direct Vertex",
+}
+
+def shorten_name(name, lang="cn"):
     """Shorten group display name for table readability"""
-    # Map known long names to short names
-    short_map = {
-        "支持所有模型;GPT、Claude 它们由Azure+mj快速+其他模型官方": "默认(Azure+MJ)",
-        "严选国内顶尖 AI 引擎，具备 99.9% 生产级稳定性。专为核心业务与高频使用设计，为您提供最稳健、最专业的智能支持。": "企业级高可用",
-        "首调aws，有少量vertex企业级和azure的claude": "AWS企业级",
-        "gemini-cli 和anti 混合": "Gemini-CLI混合",
-        "限时体验分组": "限时体验",
-        "限时特价系列": "限时特价",
-        "优质官转OpenAI": "官转OpenAI",
-        "优质官转gemini": "官转Gemini",
-        "优质官转gemini2": "官转Gemini2",
-        "优质官方Gemini": "优质Gemini",
-        "正价充值anthropic 官方克劳德": "正价官转Claude",
-        "anti和kiro渠道": "anti/kiro",
-        "Claude Code专属特供": "CC专属",
-        "Codex专属特供": "Codex专属",
-        "awsb+awsp": "AWS-B+P",
-        "官+aws渠道": "官+AWS",
-        "直连Gemini 资源为Vertex ai": "直连Vertex",
-    }
-    return short_map.get(name, name[:12] + "…" if len(name) > 12 else name)
+    sm = SHORT_MAP_EN if lang == "en" else SHORT_MAP_CN
+    short = sm.get(name)
+    if short:
+        return short
+    return name[:12] + "…" if len(name) > 12 else name
 
 
 def fmt_ratio(r):
@@ -57,12 +83,11 @@ def fmt_ratio(r):
     return str(r)
 
 
-def gen_table(data, model_ids, category_name):
+def gen_table(data, model_ids, category_name, lang="cn"):
     """Generate markdown price table for given models"""
     groups = data.get("model_group", {})
     ratios = data.get("model_completion_ratio", {})
 
-    # Collect all group names that have any of these models
     model_to_groups = {}
     for mid in model_ids:
         model_to_groups[mid] = []
@@ -74,8 +99,8 @@ def gen_table(data, model_ids, category_name):
                 cr = ratios.get(mid, 1)
                 actual_in = price * gr * 2  # 前端公式: 2 × model_ratio × group_ratio
                 cr_num = cr if isinstance(cr, (int, float)) else 1
-                actual_out = actual_in * cr_num  # 输出 = 输入 × completion_ratio
-                display = shorten_name(gval.get("DisplayName", gname))
+                actual_out = actual_in * cr_num
+                display = shorten_name(gval.get("DisplayName", gname), lang)
                 model_to_groups[mid].append({
                     "group": display,
                     "group_key": gname,
@@ -86,29 +111,34 @@ def gen_table(data, model_ids, category_name):
                 })
 
     if not any(model_to_groups.values()):
-        return f"*暂无{category_name}模型数据*\n"
+        no_data = f"*No {category_name} model data*" if lang == "en" else f"*暂无{category_name}模型数据*"
+        return no_data + "\n"
 
-    lines = []
-    lines.append("| 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |")
-    lines.append("|------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|")
+    if lang == "en":
+        lines = [
+            "| Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Default Group | Ratio | Input($/M) | Output($/M) | Out/In |",
+            "|-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|",
+        ]
+    else:
+        lines = [
+            "| 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |",
+            "|------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|",
+        ]
 
     for mid in model_ids:
         entries = model_to_groups[mid]
         if not entries:
             continue
 
-        # Sort by input price
         sorted_entries = sorted(entries, key=lambda x: x["input"])
         cheapest = sorted_entries[0]
 
-        # Find default group
         default_entry = None
         for e in entries:
             if "default" in e["group_key"].lower() or e["group_key"] == "default":
                 default_entry = e
                 break
         if not default_entry:
-            # fallback to the one with ratio closest to 1
             default_entry = min(entries, key=lambda x: abs(x["ratio"] - 1))
 
         lines.append(
@@ -123,7 +153,6 @@ def gen_table(data, model_ids, category_name):
 
 
 def get_models_by_supplier(data, suppliers):
-    """Get model IDs by supplier names"""
     model_info = data.get("model_info", {})
     result = []
     for mid, info in model_info.items():
@@ -133,7 +162,6 @@ def get_models_by_supplier(data, suppliers):
 
 
 def get_models_by_keyword(data, keywords):
-    """Get model IDs by keyword match from model_info"""
     model_info = data.get("model_info", {})
     result = []
     for mid, info in model_info.items():
@@ -144,7 +172,6 @@ def get_models_by_keyword(data, keywords):
 
 
 def extract_models_from_groups(data, keyword):
-    """Extract model IDs from model_group pricing that contain keyword"""
     groups = data.get("model_group", {})
     result = []
     for gname, gval in groups.items():
@@ -155,20 +182,15 @@ def extract_models_from_groups(data, keyword):
 
 
 def replace_section(readme, section_id, new_content):
-    """Replace content between markers"""
     start_marker = f"<!-- {section_id}_START -->"
     end_marker = f"<!-- {section_id}_END -->"
-
     start_idx = readme.find(start_marker)
     end_idx = readme.find(end_marker)
-
     if start_idx == -1 or end_idx == -1:
         print(f"Warning: markers for {section_id} not found, skipping")
         return readme
-
     before = readme[:start_idx + len(start_marker)]
     after = readme[end_idx:]
-
     return before + "\n" + new_content + "\n" + after
 
 
@@ -185,16 +207,13 @@ def main():
     print(f"  Ratios: {len(ratios)}")
 
     # --- GPT models ---
-    # Extract from both model_info and model_group (new models may only be in groups)
     gpt_models = get_models_by_keyword(data, ["gpt-5", "gpt-4", "o1", "o3", "o4"])
     gpt_from_groups = extract_models_from_groups(data, "gpt-5")
     gpt_all = list(dict.fromkeys(gpt_models + gpt_from_groups))
-    # Pick hot models
     gpt_hot = [m for m in gpt_all if any(x in m.lower() for x in
         ["gpt-5.6-sol", "gpt-5.6-luna", "gpt-5.6-terra", "gpt-5.5", "gpt-5.4-mini", "gpt-5.4-nano",
          "gpt-5.4-pro", "gpt-5.4", "gpt-5.3-chat", "gpt-5.3-codex", "gpt-5.2-chat", "gpt-5.2-codex",
          "gpt-5.1-codex", "gpt-5-codex", "gpt-5-chat", "gpt-5-mini", "gpt-5-nano", "gpt-5-pro"])]
-    # Deduplicate, exclude bare "gpt-5" which maps to old model
     gpt_hot = [m for m in gpt_hot if m not in ("gpt-5", "gpt-5-chat-latest")]
     gpt_hot = list(dict.fromkeys(gpt_hot))[:15]
 
@@ -232,12 +251,19 @@ def main():
         ["qwen3-max", "qwen3-coder", "glm-4.6", "glm-4.5", "doubao-seed-1-6", "kimi-k2"])]
     cn_hot = list(dict.fromkeys(cn_hot))[:10]
 
-    # Generate tables
-    gpt_table = gen_table(data, gpt_hot, "GPT")
-    claude_table = gen_table(data, claude_hot, "Claude")
-    gemini_table = gen_table(data, gemini_hot, "Gemini")
-    deepseek_table = gen_table(data, deepseek_hot, "DeepSeek")
-    cn_table = gen_table(data, cn_hot, "国产")
+    # Generate tables - Chinese
+    gpt_table_cn = gen_table(data, gpt_hot, "GPT", "cn")
+    claude_table_cn = gen_table(data, claude_hot, "Claude", "cn")
+    gemini_table_cn = gen_table(data, gemini_hot, "Gemini", "cn")
+    deepseek_table_cn = gen_table(data, deepseek_hot, "DeepSeek", "cn")
+    cn_table_cn = gen_table(data, cn_hot, "国产", "cn")
+
+    # Generate tables - English
+    gpt_table_en = gen_table(data, gpt_hot, "GPT", "en")
+    claude_table_en = gen_table(data, claude_hot, "Claude", "en")
+    gemini_table_en = gen_table(data, gemini_hot, "Gemini", "en")
+    deepseek_table_en = gen_table(data, deepseek_hot, "DeepSeek", "en")
+    cn_table_en = gen_table(data, cn_hot, "Chinese", "en")
 
     # Timestamp
     now = datetime.now(timezone(timedelta(hours=8)))
@@ -246,7 +272,7 @@ def main():
     # Read both READMEs
     with open(README_PATH, "r", encoding="utf-8") as f:
         readme_cn = f.read()
-    
+
     readme_en_path = os.environ.get("README_EN_PATH", "README_EN.md")
     readme_en = None
     try:
@@ -254,39 +280,36 @@ def main():
             readme_en = f.read()
     except FileNotFoundError:
         print(f"Warning: {readme_en_path} not found, skipping EN update")
-    
+
     # Replace sections in Chinese README
-    readme_cn = replace_section(readme_cn, "GPT_PRICE_TABLE", gpt_table)
-    readme_cn = replace_section(readme_cn, "CLAUDE_PRICE_TABLE", claude_table)
-    readme_cn = replace_section(readme_cn, "GEMINI_PRICE_TABLE", gemini_table)
-    readme_cn = replace_section(readme_cn, "DEEPSEEK_PRICE_TABLE", deepseek_table)
-    readme_cn = replace_section(readme_cn, "CN_MODEL_PRICE_TABLE", cn_table)
-    
-    # Replace sections in English README
-    if readme_en:
-        readme_en = replace_section(readme_en, "GPT_PRICE_TABLE", gpt_table)
-        readme_en = replace_section(readme_en, "CLAUDE_PRICE_TABLE", claude_table)
-        readme_en = replace_section(readme_en, "GEMINI_PRICE_TABLE", gemini_table)
-        readme_en = replace_section(readme_en, "DEEPSEEK_PRICE_TABLE", deepseek_table)
-        readme_en = replace_section(readme_en, "CN_MODEL_PRICE_TABLE", cn_table)
-        # Update timestamp in EN
-        readme_en = re.sub(
-            r'Last updated:[^|\n]*',
-            f'Last updated: {new_ts} (UTC+8)',
-            readme_en
-        )
-    
-    # Update timestamp in CN
+    readme_cn = replace_section(readme_cn, "GPT_PRICE_TABLE", gpt_table_cn)
+    readme_cn = replace_section(readme_cn, "CLAUDE_PRICE_TABLE", claude_table_cn)
+    readme_cn = replace_section(readme_cn, "GEMINI_PRICE_TABLE", gemini_table_cn)
+    readme_cn = replace_section(readme_cn, "DEEPSEEK_PRICE_TABLE", deepseek_table_cn)
+    readme_cn = replace_section(readme_cn, "CN_MODEL_PRICE_TABLE", cn_table_cn)
     readme_cn = re.sub(
         r'最后更新：[\d\-: ]+ \(UTC\+8\)',
         f'最后更新：{new_ts} (UTC+8)',
         readme_cn
     )
-    
+
+    # Replace sections in English README
+    if readme_en:
+        readme_en = replace_section(readme_en, "GPT_PRICE_TABLE", gpt_table_en)
+        readme_en = replace_section(readme_en, "CLAUDE_PRICE_TABLE", claude_table_en)
+        readme_en = replace_section(readme_en, "GEMINI_PRICE_TABLE", gemini_table_en)
+        readme_en = replace_section(readme_en, "DEEPSEEK_PRICE_TABLE", deepseek_table_en)
+        readme_en = replace_section(readme_en, "CN_MODEL_PRICE_TABLE", cn_table_en)
+        readme_en = re.sub(
+            r'Last updated:[^|\n]*',
+            f'Last updated: {new_ts} (UTC+8)',
+            readme_en
+        )
+
     # Write back
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_cn)
-    
+
     if readme_en:
         with open(readme_en_path, "w", encoding="utf-8") as f:
             f.write(readme_en)
