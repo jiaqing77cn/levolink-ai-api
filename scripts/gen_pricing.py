@@ -239,29 +239,58 @@ def main():
     deepseek_table = gen_table(data, deepseek_hot, "DeepSeek")
     cn_table = gen_table(data, cn_hot, "国产")
 
-    # Read README
-    with open(README_PATH, "r", encoding="utf-8") as f:
-        readme = f.read()
-
-    # Replace sections
-    readme = replace_section(readme, "GPT_PRICE_TABLE", gpt_table)
-    readme = replace_section(readme, "CLAUDE_PRICE_TABLE", claude_table)
-    readme = replace_section(readme, "GEMINI_PRICE_TABLE", gemini_table)
-    readme = replace_section(readme, "DEEPSEEK_PRICE_TABLE", deepseek_table)
-    readme = replace_section(readme, "CN_MODEL_PRICE_TABLE", cn_table)
-
-    # Update timestamp
+    # Timestamp
     now = datetime.now(timezone(timedelta(hours=8)))
     new_ts = now.strftime('%Y-%m-%d %H:%M')
-    readme = re.sub(
+
+    # Read both READMEs
+    with open(README_PATH, "r", encoding="utf-8") as f:
+        readme_cn = f.read()
+    
+    readme_en_path = os.environ.get("README_EN_PATH", "README_EN.md")
+    readme_en = None
+    try:
+        with open(readme_en_path, "r", encoding="utf-8") as f:
+            readme_en = f.read()
+    except FileNotFoundError:
+        print(f"Warning: {readme_en_path} not found, skipping EN update")
+    
+    # Replace sections in Chinese README
+    readme_cn = replace_section(readme_cn, "GPT_PRICE_TABLE", gpt_table)
+    readme_cn = replace_section(readme_cn, "CLAUDE_PRICE_TABLE", claude_table)
+    readme_cn = replace_section(readme_cn, "GEMINI_PRICE_TABLE", gemini_table)
+    readme_cn = replace_section(readme_cn, "DEEPSEEK_PRICE_TABLE", deepseek_table)
+    readme_cn = replace_section(readme_cn, "CN_MODEL_PRICE_TABLE", cn_table)
+    
+    # Replace sections in English README
+    if readme_en:
+        readme_en = replace_section(readme_en, "GPT_PRICE_TABLE", gpt_table)
+        readme_en = replace_section(readme_en, "CLAUDE_PRICE_TABLE", claude_table)
+        readme_en = replace_section(readme_en, "GEMINI_PRICE_TABLE", gemini_table)
+        readme_en = replace_section(readme_en, "DEEPSEEK_PRICE_TABLE", deepseek_table)
+        readme_en = replace_section(readme_en, "CN_MODEL_PRICE_TABLE", cn_table)
+        # Update timestamp in EN
+        readme_en = re.sub(
+            r'Last updated:[^|\n]*',
+            f'Last updated: {new_ts} (UTC+8)',
+            readme_en
+        )
+    
+    # Update timestamp in CN
+    readme_cn = re.sub(
         r'最后更新：[\d\-: ]+ \(UTC\+8\)',
         f'最后更新：{new_ts} (UTC+8)',
-        readme
+        readme_cn
     )
-
+    
     # Write back
     with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(readme)
+        f.write(readme_cn)
+    
+    if readme_en:
+        with open(readme_en_path, "w", encoding="utf-8") as f:
+            f.write(readme_en)
+        print(f"  EN README also updated")
 
     print(f"\n✅ README.md updated at {now.strftime('%Y-%m-%d %H:%M:%S')} UTC+8")
     print(f"  GPT models: {len(gpt_hot)}")

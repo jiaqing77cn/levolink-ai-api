@@ -2,7 +2,7 @@
 
 > 帮国内开发者无需翻墙、稳定低延迟地调用 Claude / GPT / Gemini / DeepSeek 等 500+ 全球顶尖 AI 模型。
 > 
-> 最后更新：2026-07-20 22:50 (UTC+8) | [🌐 官网](https://ai.levolink.com) | [📋 实时价格](#-实时模型价格) | [📖 API 文档](https://levolink.apifox.cn/)
+> 最后更新：2026-07-20 22:56 (UTC+8) | [🌐 官网](https://ai.levolink.com) | [📋 实时价格](#-实时模型价格) | [📖 API 文档](https://levolink.apifox.cn/)
 
 [English](./README_EN.md) | 中文
 
