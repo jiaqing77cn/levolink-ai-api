@@ -52,6 +52,8 @@ SHORT_MAP_EN = {
     "gemini-cli 和anti 混合": "Gemini-CLI Mix",
     "限时体验分组": "Flash Trial",
     "限时特价系列": "Flash Sale",
+    "az渠道": "Azure Channel",
+    "官方Gemini": "Official Gemini",
     "优质官转OpenAI": "Premium OpenAI",
     "优质官转gemini": "Premium Gemini",
     "优质官转gemini2": "Premium Gemini2",

@@ -23,7 +23,7 @@ Description: 国内 AI API 中转站完全指南 - 500+ 模型(Claude/GPT/Gemini
 
 </div>
 
-> 最后更新：2026-07-20 23:12 (UTC+8) | [English](./README_EN.md) | 中文
+> 最后更新：2026-07-20 23:15 (UTC+8) | [English](./README_EN.md) | 中文
 
 ---
 

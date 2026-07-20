@@ -17,7 +17,7 @@ Description: AI API proxy for China - access 500+ models (Claude/GPT/Gemini/Deep
 ![Forks](https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat)
-![CDN](https://img.shields.io/badge/CDN-China%20加速-3b82f6?style=flat)
+![CDN](https://img.shields.io/badge/CDN-China%20Accel-3b82f6?style=flat)
 ![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat)
 
 **No VPN · Low Latency · 500+ Models · OpenAI Compatible · Claude Code Ready**
@@ -26,7 +26,7 @@ Description: AI API proxy for China - access 500+ models (Claude/GPT/Gemini/Deep
 
 </div>
 
-> Last updated: 2026-07-20 23:12 (UTC+8)| [中文版](./README.md) | English
+> Last updated: 2026-07-20 23:15 (UTC+8)| [Chinese](./README.md) | English
 
 ---
 
@@ -102,20 +102,20 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
 | `gpt-5-codex` | Flash Sale | 0.6x | $0.75 | $6.00 | Codex Exclusive | 0.8x | $1.00 | $8.00 | 8x |
-| `gpt-5-mini-2025-08-07` | Flash Sale | 0.6x | $0.15 | $1.20 | az渠道 | 1.5x | $0.38 | $3.00 | 8x |
-| `gpt-5-nano-2025-08-07` | Flash Sale | 0.6x | $0.03 | $0.24 | az渠道 | 1.5x | $0.08 | $0.60 | 8x |
-| `gpt-5-pro` | Flash Sale | 0.6x | $9.00 | $72.00 | az渠道 | 1.5x | $22.50 | $180.00 | 8x |
+| `gpt-5-mini-2025-08-07` | Flash Sale | 0.6x | $0.15 | $1.20 | Azure Channel | 1.5x | $0.38 | $3.00 | 8x |
+| `gpt-5-nano-2025-08-07` | Flash Sale | 0.6x | $0.03 | $0.24 | Azure Channel | 1.5x | $0.08 | $0.60 | 8x |
+| `gpt-5-pro` | Flash Sale | 0.6x | $9.00 | $72.00 | Azure Channel | 1.5x | $22.50 | $180.00 | 8x |
 | `gpt-5.1-codex` | Flash Sale | 0.6x | $0.75 | $6.00 | Codex Exclusive | 0.8x | $1.00 | $8.00 | 8x |
 | `gpt-5.3-codex-spark` | Codex Exclusive | 0.8x | $1.40 | $11.20 | Premium OpenAI | 8x | $14.00 | $112.00 | 8x |
 | `gpt-5.4` | Flash Sale | 0.6x | $1.50 | $9.00 | Codex Exclusive | 0.8x | $2.00 | $12.00 | 6x |
 | `gpt-5.4-mini` | Flash Sale | 0.6x | $0.45 | $2.70 | Codex Exclusive | 0.8x | $0.60 | $3.60 | 6x |
-| `gpt-5.5` | Codex Exclusive | 0.8x | $4.00 | $24.00 | az渠道 | 1.5x | $7.50 | $45.00 | 6x |
-| `gpt-5.6-luna` | Codex Exclusive | 0.8x | $0.80 | $4.80 | az渠道 | 1.5x | $1.50 | $9.00 | 6x |
+| `gpt-5.5` | Codex Exclusive | 0.8x | $4.00 | $24.00 | Azure Channel | 1.5x | $7.50 | $45.00 | 6x |
+| `gpt-5.6-luna` | Codex Exclusive | 0.8x | $0.80 | $4.80 | Azure Channel | 1.5x | $1.50 | $9.00 | 6x |
 | `gpt-5.6-luna-max` | Codex Exclusive | 0.8x | $0.80 | $4.80 | Default(Azure+MJ) | 1x | $1.00 | $6.00 | 6x |
-| `gpt-5.6-sol` | Codex Exclusive | 0.8x | $4.00 | $24.00 | az渠道 | 1.5x | $7.50 | $45.00 | 6x |
+| `gpt-5.6-sol` | Codex Exclusive | 0.8x | $4.00 | $24.00 | Azure Channel | 1.5x | $7.50 | $45.00 | 6x |
 | `gpt-5.6-sol-max` | Codex Exclusive | 0.8x | $4.00 | $24.00 | Default(Azure+MJ) | 1x | $5.00 | $30.00 | 6x |
 | `gpt-5.6-sol-ultra` | Codex Exclusive | 0.8x | $4.00 | $24.00 | Default(Azure+MJ) | 1x | $5.00 | $30.00 | 6x |
-| `gpt-5.6-terra` | Codex Exclusive | 0.8x | $2.00 | $12.00 | az渠道 | 1.5x | $3.75 | $22.50 | 6x |
+| `gpt-5.6-terra` | Codex Exclusive | 0.8x | $2.00 | $12.00 | Azure Channel | 1.5x | $3.75 | $22.50 | 6x |
 
 <!-- GPT_PRICE_TABLE_END -->
 
@@ -145,12 +145,12 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
 | `gemini-2.0-flash-lite` | Quality Gemini | 3.6x | $0.27 | $1.08 | Premium Gemini | 6x | $0.45 | $1.80 | 4x |
 | `gemini-2.5-flash` | Gemini-CLI Mix | 1x | $0.30 | $2.50 | Premium Gemini | 6x | $1.80 | $15.01 | 8.34x |
-| `gemini-2.5-flash-image` | 官方Gemini | 2.4x | $0.72 | $6.00 | Premium Gemini | 6x | $1.80 | $15.00 | 8.33x |
+| `gemini-2.5-flash-image` | Official Gemini | 2.4x | $0.72 | $6.00 | Premium Gemini | 6x | $1.80 | $15.00 | 8.33x |
 | `gemini-2.5-flash-lite` | Gemini-CLI Mix | 1x | $0.10 | $0.40 | Premium Gemini | 6x | $0.60 | $2.40 | 4x |
 | `gemini-2.5-pro` | Gemini-CLI Mix | 1x | $1.25 | $10.00 | Premium Gemini | 6x | $7.50 | $60.00 | 8x |
 | `gemini-3.1-flash-lite` | Gemini-CLI Mix | 1x | $0.25 | $1.50 | Premium Gemini | 6x | $1.50 | $9.00 | 6x |
 | `gemini-3.5-flash` | Gemini-CLI Mix | 1x | $1.50 | $9.00 | Premium Gemini | 6x | $9.00 | $54.00 | 6x |
-| `gemini-3-pro-image` | 官方Gemini | 2.4x | $1.58 | $6.34 | Premium Gemini | 6x | $3.96 | $15.84 | 4x |
+| `gemini-3-pro-image` | Official Gemini | 2.4x | $1.58 | $6.34 | Premium Gemini | 6x | $3.96 | $15.84 | 4x |
 
 <!-- GEMINI_PRICE_TABLE_END -->
 
@@ -159,14 +159,14 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 <!-- DEEPSEEK_PRICE_TABLE_START -->
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
-| `deepseek-r1` | Flash Sale | 0.6x | $2.40 | $9.60 | az渠道 | 1.5x | $6.00 | $24.00 | 4x |
-| `deepseek-r1-2025-01-20` | Flash Sale | 0.6x | $2.40 | $9.60 | az渠道 | 1.5x | $6.00 | $24.00 | 4x |
-| `deepseek-r1-250528` | Flash Sale | 0.6x | $2.40 | $9.60 | az渠道 | 1.5x | $6.00 | $24.00 | 4x |
-| `deepseek-r1-distill-qwen-32b` | Default(Azure+MJ) | 1x | $2.00 | $6.00 | az渠道 | 1.5x | $3.00 | $9.00 | 3x |
-| `deepseek-r1-distill-qwen-7b` | Default(Azure+MJ) | 1x | $0.50 | $1.00 | az渠道 | 1.5x | $0.75 | $1.50 | 2x |
-| `deepseek-reasoner` | Flash Sale | 0.6x | $2.40 | $9.60 | az渠道 | 1.5x | $6.00 | $24.00 | 4x |
-| `deepseek-v3-1-250821` | Flash Sale | 0.6x | $2.40 | $7.20 | az渠道 | 1.5x | $6.00 | $18.00 | 3x |
-| `deepseek-v3-1-think-250821` | Default(Azure+MJ) | 1x | $4.00 | $12.00 | az渠道 | 1.5x | $6.00 | $18.00 | 3x |
+| `deepseek-r1` | Flash Sale | 0.6x | $2.40 | $9.60 | Azure Channel | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-2025-01-20` | Flash Sale | 0.6x | $2.40 | $9.60 | Azure Channel | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-250528` | Flash Sale | 0.6x | $2.40 | $9.60 | Azure Channel | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-distill-qwen-32b` | Default(Azure+MJ) | 1x | $2.00 | $6.00 | Azure Channel | 1.5x | $3.00 | $9.00 | 3x |
+| `deepseek-r1-distill-qwen-7b` | Default(Azure+MJ) | 1x | $0.50 | $1.00 | Azure Channel | 1.5x | $0.75 | $1.50 | 2x |
+| `deepseek-reasoner` | Flash Sale | 0.6x | $2.40 | $9.60 | Azure Channel | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-v3-1-250821` | Flash Sale | 0.6x | $2.40 | $7.20 | Azure Channel | 1.5x | $6.00 | $18.00 | 3x |
+| `deepseek-v3-1-think-250821` | Default(Azure+MJ) | 1x | $4.00 | $12.00 | Azure Channel | 1.5x | $6.00 | $18.00 | 3x |
 
 <!-- DEEPSEEK_PRICE_TABLE_END -->
 
@@ -175,18 +175,18 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 <!-- CN_MODEL_PRICE_TABLE_START -->
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
-| `qwen3-max` | Flash Sale | 0.6x | $1.50 | $6.00 | az渠道 | 1.5x | $3.75 | $15.00 | 4x |
-| `qwen3-max-2026-01-23` | Default(Azure+MJ) | 1x | $2.50 | $10.00 | az渠道 | 1.5x | $3.75 | $15.00 | 4x |
-| `qwen3-coder` | Default(Azure+MJ) | 1x | $6.00 | $24.00 | az渠道 | 1.5x | $9.00 | $36.00 | 4x |
+| `qwen3-max` | Flash Sale | 0.6x | $1.50 | $6.00 | Azure Channel | 1.5x | $3.75 | $15.00 | 4x |
+| `qwen3-max-2026-01-23` | Default(Azure+MJ) | 1x | $2.50 | $10.00 | Azure Channel | 1.5x | $3.75 | $15.00 | 4x |
+| `qwen3-coder` | Default(Azure+MJ) | 1x | $6.00 | $24.00 | Azure Channel | 1.5x | $9.00 | $36.00 | 4x |
 | `qwen3-coder-plus` | Flash Sale | 0.6x | $2.40 | $9.60 | Default(Azure+MJ) | 1x | $4.00 | $16.00 | 4x |
-| `qwen3.6-plus` | Default(Azure+MJ) | 1x | $2.00 | $12.00 | az渠道 | 1.5x | $3.00 | $18.00 | 6x |
-| `qwen3.7-max` | Flash Sale | 0.6x | $7.20 | $21.60 | az渠道 | 1.5x | $18.00 | $54.00 | 3x |
-| `glm-4.6` | Flash Sale | 0.6x | $1.20 | $4.80 | az渠道 | 1.5x | $3.00 | $12.00 | 4x |
-| `glm-4.5` | Flash Sale | 0.6x | $0.96 | $3.84 | az渠道 | 1.5x | $2.40 | $9.60 | 4x |
-| `glm-4.5-air` | Flash Sale | 0.6x | $0.48 | $3.60 | az渠道 | 1.5x | $1.20 | $9.00 | 7.5x |
-| `kimi-k2` | Flash Sale | 0.6x | $2.40 | $9.60 | az渠道 | 1.5x | $6.00 | $24.00 | 4x |
-| `kimi-k2.5` | Default(Azure+MJ) | 1x | $4.00 | $21.00 | az渠道 | 1.5x | $6.00 | $31.50 | 5.25x |
-| `kimi-k3` | az渠道 | 1.5x | $30.00 | $150.00 | az渠道 | 3x | $60.00 | $300.00 | 5x |
+| `qwen3.6-plus` | Default(Azure+MJ) | 1x | $2.00 | $12.00 | Azure Channel | 1.5x | $3.00 | $18.00 | 6x |
+| `qwen3.7-max` | Flash Sale | 0.6x | $7.20 | $21.60 | Azure Channel | 1.5x | $18.00 | $54.00 | 3x |
+| `glm-4.6` | Flash Sale | 0.6x | $1.20 | $4.80 | Azure Channel | 1.5x | $3.00 | $12.00 | 4x |
+| `glm-4.5` | Flash Sale | 0.6x | $0.96 | $3.84 | Azure Channel | 1.5x | $2.40 | $9.60 | 4x |
+| `glm-4.5-air` | Flash Sale | 0.6x | $0.48 | $3.60 | Azure Channel | 1.5x | $1.20 | $9.00 | 7.5x |
+| `kimi-k2` | Flash Sale | 0.6x | $2.40 | $9.60 | Azure Channel | 1.5x | $6.00 | $24.00 | 4x |
+| `kimi-k2.5` | Default(Azure+MJ) | 1x | $4.00 | $21.00 | Azure Channel | 1.5x | $6.00 | $31.50 | 5.25x |
+| `kimi-k3` | Azure Channel | 1.5x | $30.00 | $150.00 | Azure Channel | 3x | $60.00 | $300.00 | 5x |
 
 <!-- CN_MODEL_PRICE_TABLE_END -->
 
