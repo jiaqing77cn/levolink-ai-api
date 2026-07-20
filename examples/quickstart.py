@@ -1,5 +1,5 @@
 """
-Levolink AI — Python Quickstart
+Levolink AI - Python Quickstart
 ================================
 Access 500+ AI models (Claude/GPT/Gemini/DeepSeek) via one OpenAI-compatible API.
 
@@ -43,14 +43,14 @@ def stream_chat(model: str, message: str):
 
 
 if __name__ == "__main__":
-    # Example 1: GPT-4o
-    print("=== GPT-4o ===")
-    print(chat("gpt-4o", "Write a Python quicksort in 5 lines."))
+    # Example 1: GPT-5.6 Sol
+    print("=== GPT-5.6 Sol ===")
+    print(chat("gpt-5.6-sol", "Write a Python quicksort in 5 lines."))
 
     # Example 2: Claude Sonnet 4.6
     print("\n=== Claude Sonnet 4.6 ===")
     print(chat(
-        "claude-sonnet-4-20250514",
+        "claude-sonnet-4-6",
         "Explain quantum entanglement in one sentence.",
         extra_body={"anthropic_version": "vertex-2023-10-01"},
     ))
@@ -62,3 +62,7 @@ if __name__ == "__main__":
     # Example 4: Gemini 2.5 Pro
     print("\n=== Gemini 2.5 Pro ===")
     print(chat("gemini-2.5-pro", "What is the capital of France?"))
+
+    # Example 5: Qwen3 Max
+    print("\n=== Qwen3 Max ===")
+    print(chat("qwen3-max", "用Python实现快速排序"))

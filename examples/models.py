@@ -1,5 +1,5 @@
 """
-Levolink AI — Supported Models List
+Levolink AI - Supported Models List
 ====================================
 Complete list of 500+ AI models available through the Levolink AI API proxy.
 
@@ -13,66 +13,70 @@ Docs: https://levolink.apifox.cn/
 SUPPORTED_MODELS = {
     # OpenAI
     "openai": [
-        "gpt-5", "gpt-4o", "gpt-4o-mini", "gpt-4", "gpt-4-turbo",
-        "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "o1", "o1-mini", "o3-mini",
-        "dall-e-3", "dall-e-2", "tts-1", "tts-1-hd", "whisper-1",
+        "gpt-5.6-sol", "gpt-5.6-sol-max", "gpt-5.6-sol-ultra",
+        "gpt-5.6-luna", "gpt-5.6-luna-max", "gpt-5.6-terra",
+        "gpt-5.5", "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.4-pro",
+        "gpt-5.3-codex-spark", "gpt-5.2-chat", "gpt-5.2-codex",
+        "gpt-5.1-codex", "gpt-5-codex", "gpt-5-chat", "gpt-5-mini", "gpt-5-nano", "gpt-5-pro",
+        "gpt-image-2", "dall-e-3", "tts-1", "tts-1-hd", "whisper-1",
     ],
     # Anthropic
     "anthropic": [
-        "claude-opus-4-20250514", "claude-sonnet-4-20250514",
-        "claude-haiku-4-20250514", "claude-3-5-sonnet-20241022",
-        "claude-3-5-haiku-20241022", "claude-3-opus-20240229",
+        "claude-opus-4-8", "claude-opus-4-7", "claude-opus-4-6",
+        "claude-opus-4-5-20251101", "claude-opus-4-1-20250805",
+        "claude-sonnet-5", "claude-sonnet-4-6",
+        "claude-sonnet-4-5-20250929", "claude-sonnet-4-20250514",
+        "claude-fable-5", "claude-haiku-4-5-20251001",
     ],
     # Google
     "google": [
-        "gemini-2.5-pro", "gemini-2.0-flash", "gemini-2.0-flash-lite",
-        "gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.5-flash-8b",
+        "gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-3-pro-image",
+        "gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.5-flash-image",
+        "gemini-2.5-flash-lite", "gemini-2.0-flash-lite",
     ],
     # DeepSeek
     "deepseek": [
-        "deepseek-chat", "deepseek-coder", "deepseek-reasoner",
-        "deepseek-v4", "deepseek-r1", "deepseek-r1-distill-qwen-32b",
+        "deepseek-v3-1-250821", "deepseek-v3-1-think-250821",
+        "deepseek-r1", "deepseek-r1-250528", "deepseek-reasoner",
+        "deepseek-r1-distill-qwen-32b", "deepseek-r1-distill-qwen-7b",
     ],
     # Chinese Models
     "chinese": [
-        "qwen3-235b-a22b", "qwen3-30b-a3b", "qwen2.5-72b-instruct",
-        "doubao-pro-32k", "doubao-pro-128k", "doubao-lite-32k",
-        "glm-4-plus", "glm-4-air", "glm-4-flash",
-        "moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k",
-        "minimax-abab6.5s", "minimax-abab6.5",
+        "qwen3-max", "qwen3-coder", "qwen3-coder-plus", "qwen3.6-plus", "qwen3.7-max",
+        "glm-4.6", "glm-4.5", "glm-4.5-air", "glm-4.5-flash",
+        "kimi-k2", "kimi-k2.5", "kimi-k3",
+        "doubao-seed-1-6-250615", "doubao-seed-1-8-251228", "doubao-seed-2-0-lite-260215",
+        "MiniMax-M3", "MiniMax-M2.7",
     ],
-    # Image / Video / Audio
+    # Media Generation
     "media": [
-        "midjourney", "suno-v3.5", "suno-v4", "sora", "sora-2",
+        "midjourney", "suno-v4", "sora", "sora-2",
         "flux-1.1-pro", "flux-1-schnell", "flux-1-dev",
-        "veo-3", "veo-2", "stable-diffusion-3.5-large",
+        "veo-3", "veo-2", "gpt-image-2",
+        "qwen-image-max", "kling", "vidu",
     ],
 }
 
 
-def get_models_by_provider(provider: str) -> list:
-    """Get all available models for a given provider."""
+def get_models_by_provider(provider: str) -> list[str]:
+    """Get all models for a given provider."""
     return SUPPORTED_MODELS.get(provider.lower(), [])
 
 
-def get_all_models() -> list:
-    """Get a flat list of all supported models."""
-    models = []
-    for provider_models in SUPPORTED_MODELS.values():
-        models.extend(provider_models)
-    return models
-
-
-def get_provider(model_name: str) -> str:
-    """Find which provider a model belongs to."""
-    for provider, models in SUPPORTED_MODELS.items():
-        if model_name in models:
-            return provider
-    return "unknown"
+def get_all_models() -> list[str]:
+    """Get all supported models across all providers."""
+    all_models = []
+    for models in SUPPORTED_MODELS.values():
+        all_models.extend(models)
+    return sorted(set(all_models))
 
 
 if __name__ == "__main__":
-    total = len(get_all_models())
-    print(f"Levolink AI supports {total}+ models across {len(SUPPORTED_MODELS)} providers:\n")
     for provider, models in SUPPORTED_MODELS.items():
-        print(f"  {provider:12s} ({len(models):2d} models): {', '.join(models[:5])}{'...' if len(models) > 5 else ''}")
+        print(f"{provider}: {len(models)} models")
+        for m in models[:5]:
+            print(f"  - {m}")
+        if len(models) > 5:
+            print(f"  ... and {len(models) - 5} more")
+        print()
+    print(f"Total: {len(get_all_models())} models")

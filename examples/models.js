@@ -1,5 +1,5 @@
 /**
- * Levolink AI — Supported Models (JavaScript)
+ * Levolink AI - Supported Models (JavaScript)
  * ============================================
  * Complete list of AI models available through the Levolink AI API proxy.
  *
@@ -12,32 +12,42 @@
 
 export const SUPPORTED_MODELS = {
   openai: [
-    "gpt-5", "gpt-4o", "gpt-4o-mini", "gpt-4", "gpt-4-turbo",
-    "gpt-3.5-turbo", "gpt-3.5-turbo-16k", "o1", "o1-mini", "o3-mini",
-    "dall-e-3", "tts-1", "tts-1-hd", "whisper-1",
+    "gpt-5.6-sol", "gpt-5.6-sol-max", "gpt-5.6-sol-ultra",
+    "gpt-5.6-luna", "gpt-5.6-luna-max", "gpt-5.6-terra",
+    "gpt-5.5", "gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.4-pro",
+    "gpt-5.3-codex-spark", "gpt-5.2-chat", "gpt-5.2-codex",
+    "gpt-5.1-codex", "gpt-5-codex", "gpt-5-chat", "gpt-5-mini", "gpt-5-nano", "gpt-5-pro",
+    "gpt-image-2", "dall-e-3", "tts-1", "tts-1-hd", "whisper-1",
   ],
   anthropic: [
-    "claude-opus-4-20250514", "claude-sonnet-4-20250514",
-    "claude-haiku-4-20250514", "claude-3-5-sonnet-20241022",
-    "claude-3-5-haiku-20241022", "claude-3-opus-20240229",
+    "claude-opus-4-8", "claude-opus-4-7", "claude-opus-4-6",
+    "claude-opus-4-5-20251101", "claude-opus-4-1-20250805",
+    "claude-sonnet-5", "claude-sonnet-4-6",
+    "claude-sonnet-4-5-20250929", "claude-sonnet-4-20250514",
+    "claude-fable-5", "claude-haiku-4-5-20251001",
   ],
   google: [
-    "gemini-2.5-pro", "gemini-2.0-flash", "gemini-2.0-flash-lite",
-    "gemini-1.5-pro", "gemini-1.5-flash", "gemini-1.5-flash-8b",
+    "gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-3-pro-image",
+    "gemini-2.5-pro", "gemini-2.5-flash", "gemini-2.5-flash-image",
+    "gemini-2.5-flash-lite", "gemini-2.0-flash-lite",
   ],
   deepseek: [
-    "deepseek-chat", "deepseek-coder", "deepseek-reasoner",
-    "deepseek-v4", "deepseek-r1",
+    "deepseek-v3-1-250821", "deepseek-v3-1-think-250821",
+    "deepseek-r1", "deepseek-r1-250528", "deepseek-reasoner",
+    "deepseek-r1-distill-qwen-32b", "deepseek-r1-distill-qwen-7b",
   ],
   chinese: [
-    "qwen3-235b-a22b", "qwen3-30b-a3b", "qwen2.5-72b-instruct",
-    "doubao-pro-32k", "doubao-pro-128k", "glm-4-plus", "glm-4-flash",
-    "moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k",
-    "minimax-abab6.5s", "minimax-abab6.5",
+    "qwen3-max", "qwen3-coder", "qwen3-coder-plus", "qwen3.6-plus", "qwen3.7-max",
+    "glm-4.6", "glm-4.5", "glm-4.5-air", "glm-4.5-flash",
+    "kimi-k2", "kimi-k2.5", "kimi-k3",
+    "doubao-seed-1-6-250615", "doubao-seed-1-8-251228", "doubao-seed-2-0-lite-260215",
+    "MiniMax-M3", "MiniMax-M2.7",
   ],
   media: [
-    "midjourney", "suno-v3.5", "suno-v4", "sora", "sora-2",
-    "flux-1.1-pro", "flux-1-schnell", "flux-1-dev", "veo-3", "veo-2",
+    "midjourney", "suno-v4", "sora", "sora-2",
+    "flux-1.1-pro", "flux-1-schnell", "flux-1-dev",
+    "veo-3", "veo-2", "gpt-image-2",
+    "qwen-image-max", "kling", "vidu",
   ],
 };
 
@@ -46,23 +56,16 @@ export function getModelsByProvider(provider) {
 }
 
 export function getAllModels() {
-  return Object.values(SUPPORTED_MODELS).flat();
+  return [...new Set(Object.values(SUPPORTED_MODELS).flat())].sort();
 }
 
-export function getProvider(modelName) {
-  for (const [provider, models] of Object.entries(SUPPORTED_MODELS)) {
-    if (models.includes(modelName)) return provider;
-  }
-  return "unknown";
-}
-
-// CLI output
+// CLI
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const all = getAllModels();
-  console.log(`Levolink AI supports ${all.length}+ models across ${Object.keys(SUPPORTED_MODELS).length} providers:\n`);
   for (const [provider, models] of Object.entries(SUPPORTED_MODELS)) {
-    const preview = models.slice(0, 5).join(", ");
-    const ellipsis = models.length > 5 ? "..." : "";
-    console.log(`  ${provider.padEnd(12)} (${String(models.length).padStart(2)} models): ${preview}${ellipsis}`);
+    console.log(`${provider}: ${models.length} models`);
+    models.slice(0, 5).forEach((m) => console.log(`  - ${m}`));
+    if (models.length > 5) console.log(`  ... and ${models.length - 5} more`);
+    console.log();
   }
+  console.log(`Total: ${getAllModels().length} models`);
 }

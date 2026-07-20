@@ -1,17 +1,17 @@
 #!/bin/bash
-# Levolink AI — curl Quickstart
+# Levolink AI - curl Quickstart
 # Access 500+ AI models via one OpenAI-compatible API.
 # Docs: https://levolink.apifox.cn/
 
 API_KEY="${LEVOLINK_API_KEY:-your-api-key}"
 BASE_URL="https://ai.levolink.com/v1"
 
-echo "=== GPT-4o ==="
+echo "=== GPT-5.6 Sol ==="
 curl -s "$BASE_URL/chat/completions" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $API_KEY" \
   -d '{
-    "model": "gpt-4o",
+    "model": "gpt-5.6-sol",
     "messages": [{"role": "user", "content": "Say hello in 5 languages."}]
   }' | jq '.choices[0].message.content'
 
@@ -21,7 +21,7 @@ curl -s "$BASE_URL/chat/completions" \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $API_KEY" \
   -d '{
-    "model": "claude-sonnet-4-20250514",
+    "model": "claude-sonnet-4-6",
     "messages": [{"role": "user", "content": "What is 2+2?"}],
     "anthropic_version": "vertex-2023-10-01"
   }' | jq '.choices[0].message.content'
