@@ -65,8 +65,8 @@ SHORT_MAP_EN = {
     "直连Gemini 资源为Vertex ai": "Direct Vertex",
 }
 
+
 def shorten_name(name, lang="cn"):
-    """Shorten group display name for table readability"""
     sm = SHORT_MAP_EN if lang == "en" else SHORT_MAP_CN
     short = sm.get(name)
     if short:
@@ -75,12 +75,42 @@ def shorten_name(name, lang="cn"):
 
 
 def fmt_ratio(r):
-    """Format ratio number cleanly"""
     if isinstance(r, float):
         if r == int(r):
             return str(int(r))
         return f"{r:.2f}".rstrip('0').rstrip('.')
     return str(r)
+
+
+def find_premium_entry(entries, cheapest):
+    """Find a premium group entry that's different from cheapest.
+    Prefer mid-tier groups (ratio 1.2-4.0) to show a meaningful price comparison."""
+    # Preferred premium groups by group_key, in priority order
+    premium_keys = [
+        "Claude Code专属",      # 2.4x - CC Exclusive
+        "Codex专属",           # 0.8x - but won't be picked if it's the cheapest
+        "特价 Claude Code",     # 1.2x - anti/kiro
+        "限时claude",          # 2x
+        "优质gpt",             # 3x
+        "官转克劳德1",           # 4x - AWS enterprise
+        "纯AZ",               # 1.5x - Azure
+        "官转",               # 3x - az channel
+        "优质官转OpenAI",        # 8x
+        "优质官转gemini",        # 6x
+        "官转gemini",          # 3.6x
+    ]
+    for pk in premium_keys:
+        for e in entries:
+            if pk in e["group_key"] and e["group_key"] != cheapest["group_key"]:
+                return e
+    # Fallback: find a mid-ratio entry (1.5x-5x) different from cheapest
+    others = [e for e in entries if e["group_key"] != cheapest["group_key"]]
+    mid_tier = [e for e in others if 1.5 <= e["ratio"] <= 5]
+    if mid_tier:
+        return min(mid_tier, key=lambda x: abs(x["ratio"] - 2.5))
+    if others:
+        return min(others, key=lambda x: abs(x["ratio"] - 2.5))
+    return None
 
 
 def gen_table(data, model_ids, category_name, lang="cn"):
@@ -97,7 +127,7 @@ def gen_table(data, model_ids, category_name, lang="cn"):
                 gr = gval.get("GroupRatio", 1)
                 price = mp[mid].get("price", 0)
                 cr = ratios.get(mid, 1)
-                actual_in = price * gr * 2  # 前端公式: 2 × model_ratio × group_ratio
+                actual_in = price * gr * 2
                 cr_num = cr if isinstance(cr, (int, float)) else 1
                 actual_out = actual_in * cr_num
                 display = shorten_name(gval.get("DisplayName", gname), lang)
@@ -115,15 +145,13 @@ def gen_table(data, model_ids, category_name, lang="cn"):
         return no_data + "\n"
 
     if lang == "en":
-        lines = [
-            "| Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Default Group | Ratio | Input($/M) | Output($/M) | Out/In |",
-            "|-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|",
-        ]
+        header = "| Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |"
+        separator = "|-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|"
     else:
-        lines = [
-            "| 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |",
-            "|------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|",
-        ]
+        header = "| 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 推荐分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |"
+        separator = "|------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|"
+
+    lines = [header, separator]
 
     for mid in model_ids:
         entries = model_to_groups[mid]
@@ -133,21 +161,26 @@ def gen_table(data, model_ids, category_name, lang="cn"):
         sorted_entries = sorted(entries, key=lambda x: x["input"])
         cheapest = sorted_entries[0]
 
-        default_entry = None
-        for e in entries:
-            if "default" in e["group_key"].lower() or e["group_key"] == "default":
-                default_entry = e
-                break
-        if not default_entry:
-            default_entry = min(entries, key=lambda x: abs(x["ratio"] - 1))
+        # Find premium entry (different from cheapest)
+        premium = find_premium_entry(entries, cheapest)
 
-        lines.append(
-            f"| `{mid}` | {cheapest['group']} | {fmt_ratio(cheapest['ratio'])}x | "
-            f"${cheapest['input']:.2f} | ${cheapest['output']:.2f} | "
-            f"{default_entry['group']} | {fmt_ratio(default_entry['ratio'])}x | "
-            f"${default_entry['input']:.2f} | ${default_entry['output']:.2f} | "
-            f"{fmt_ratio(cheapest['cr'])}x |"
-        )
+        if premium:
+            lines.append(
+                f"| `{mid}` | {cheapest['group']} | {fmt_ratio(cheapest['ratio'])}x | "
+                f"${cheapest['input']:.2f} | ${cheapest['output']:.2f} | "
+                f"{premium['group']} | {fmt_ratio(premium['ratio'])}x | "
+                f"${premium['input']:.2f} | ${premium['output']:.2f} | "
+                f"{fmt_ratio(cheapest['cr'])}x |"
+            )
+        else:
+            # Only one group available
+            dash = "-"
+            lines.append(
+                f"| `{mid}` | {cheapest['group']} | {fmt_ratio(cheapest['ratio'])}x | "
+                f"${cheapest['input']:.2f} | ${cheapest['output']:.2f} | "
+                f"{dash} | {dash} | {dash} | {dash} | "
+                f"{fmt_ratio(cheapest['cr'])}x |"
+            )
 
     return "\n".join(lines) + "\n"
 
@@ -178,6 +211,19 @@ def extract_models_from_groups(data, keyword):
         for mid in gval.get("ModelPrice", {}).keys():
             if keyword in mid.lower() and mid not in result:
                 result.append(mid)
+    return result
+
+
+def extract_exact_models(data, model_names):
+    """Extract exact model names from model_group"""
+    groups = data.get("model_group", {})
+    result = []
+    for mid in model_names:
+        for gname, gval in groups.items():
+            if mid in gval.get("ModelPrice", {}):
+                if mid not in result:
+                    result.append(mid)
+                break
     return result
 
 
@@ -241,15 +287,31 @@ def main():
         ["v3.1", "v3-1", "r1", "v3.2", "reasoner"])]
     deepseek_hot = list(dict.fromkeys(deepseek_hot))[:8]
 
-    # --- CN models ---
-    cn_models = get_models_by_supplier(data, ["Aliyun", "zhipuai", "doubao", "Moonshot", "MiniMax"])
-    cn_from_groups = []
-    for kw in ["qwen3", "glm-4.6", "glm-4.5", "doubao-seed", "kimi-k2"]:
-        cn_from_groups += [m for m in extract_models_from_groups(data, kw) if m not in cn_models]
-    cn_all = list(dict.fromkeys(cn_models + cn_from_groups))
+    # --- CN models - use exact names to avoid missing ---
+    cn_exact = extract_exact_models(data, [
+        "qwen3-max", "qwen3-max-2026-01-23", "qwen3-coder", "qwen3-coder-plus",
+        "qwen3.6-plus", "qwen3.7-max",
+        "glm-4.6", "glm-4.5", "glm-4.5-air",
+        "kimi-k2", "kimi-k2.5", "kimi-k3",
+        "doubao-seed-1-6-250615", "doubao-seed-1-8-251228",
+        "doubao-seed-2-0-lite-260215",
+        "MiniMax-M3", "MiniMax-M2.7",
+    ])
+    # Also try keyword-based for any we missed
+    cn_from_kw = []
+    for kw in ["qwen3-max", "qwen3-coder", "glm-4.6", "glm-4.5", "doubao-seed", "kimi-k"]:
+        cn_from_kw += [m for m in extract_models_from_groups(data, kw) if m not in cn_exact]
+    cn_all = list(dict.fromkeys(cn_exact + cn_from_kw))
+    # Filter to hot models
     cn_hot = [m for m in cn_all if any(x in m.lower() for x in
-        ["qwen3-max", "qwen3-coder", "glm-4.6", "glm-4.5", "doubao-seed-1-6", "kimi-k2"])]
-    cn_hot = list(dict.fromkeys(cn_hot))[:10]
+        ["qwen3-max", "qwen3-coder", "qwen3.6-plus", "qwen3.7-max",
+         "glm-4.6", "glm-4.5",
+         "kimi-k2", "kimi-k3",
+         "doubao-seed-1-6", "doubao-seed-1-8", "doubao-seed-2-0",
+         "minimax-m3", "minimax-m2"])]
+    cn_hot = list(dict.fromkeys(cn_hot))[:12]
+
+    print(f"  CN hot models found: {cn_hot}")
 
     # Generate tables - Chinese
     gpt_table_cn = gen_table(data, gpt_hot, "GPT", "cn")
