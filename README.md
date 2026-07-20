@@ -2,7 +2,7 @@
 
 > 帮国内开发者无需翻墙、稳定低延迟地调用 Claude / GPT / Gemini / DeepSeek 等 500+ 全球顶尖 AI 模型。
 > 
-> 最后更新：2026-07-20 22:40 (UTC+8) | [🌐 官网](https://ai.levolink.com) | [📋 实时价格](#-实时模型价格) | [📖 API 文档](https://levolink.apifox.cn/)
+> 最后更新：2026-07-20 22:50 (UTC+8) | [🌐 官网](https://ai.levolink.com) | [📋 实时价格](#-实时模型价格) | [📖 API 文档](https://levolink.apifox.cn/)
 
 [English](./README_EN.md) | 中文
 
@@ -70,21 +70,21 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 <!-- GPT_PRICE_TABLE_START -->
 | 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |
 |------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|
-| `gpt-5-codex` | 限时特价 | 0.6x | $0.38 | $3.00 | 默认(Azure+MJ) | 1x | $0.62 | $5.00 | 8x |
-| `gpt-5-mini-2025-08-07` | 限时特价 | 0.6x | $0.07 | $0.60 | 默认(Azure+MJ) | 1x | $0.12 | $1.00 | 8x |
-| `gpt-5-nano-2025-08-07` | 限时特价 | 0.6x | $0.01 | $0.12 | 默认(Azure+MJ) | 1x | $0.03 | $0.20 | 8x |
-| `gpt-5-pro` | 限时特价 | 0.6x | $4.50 | $36.00 | 默认(Azure+MJ) | 1x | $7.50 | $60.00 | 8x |
-| `gpt-5.1-codex` | 限时特价 | 0.6x | $0.38 | $3.00 | 默认(Azure+MJ) | 1x | $0.62 | $5.00 | 8x |
-| `gpt-5.3-codex-spark` | Codex专属 | 0.8x | $0.70 | $5.60 | 默认(Azure+MJ) | 1x | $0.88 | $7.00 | 8x |
-| `gpt-5.4` | 限时特价 | 0.6x | $0.75 | $4.50 | 默认(Azure+MJ) | 1x | $1.25 | $7.50 | 6x |
-| `gpt-5.4-mini` | 限时特价 | 0.6x | $0.22 | $1.35 | 默认(Azure+MJ) | 1x | $0.38 | $2.25 | 6x |
-| `gpt-5.5` | Codex专属 | 0.8x | $2.00 | $12.00 | 默认(Azure+MJ) | 1x | $2.50 | $15.00 | 6x |
-| `gpt-5.6-luna` | Codex专属 | 0.8x | $0.40 | $2.40 | 默认(Azure+MJ) | 1x | $0.50 | $3.00 | 6x |
-| `gpt-5.6-luna-max` | Codex专属 | 0.8x | $0.40 | $2.40 | 默认(Azure+MJ) | 1x | $0.50 | $3.00 | 6x |
-| `gpt-5.6-sol` | Codex专属 | 0.8x | $2.00 | $12.00 | 默认(Azure+MJ) | 1x | $2.50 | $15.00 | 6x |
-| `gpt-5.6-sol-max` | Codex专属 | 0.8x | $2.00 | $12.00 | 默认(Azure+MJ) | 1x | $2.50 | $15.00 | 6x |
-| `gpt-5.6-sol-ultra` | Codex专属 | 0.8x | $2.00 | $12.00 | 默认(Azure+MJ) | 1x | $2.50 | $15.00 | 6x |
-| `gpt-5.6-terra` | Codex专属 | 0.8x | $1.00 | $6.00 | 默认(Azure+MJ) | 1x | $1.25 | $7.50 | 6x |
+| `gpt-5-codex` | 限时特价 | 0.6x | $0.75 | $6.00 | 默认(Azure+MJ) | 1x | $1.25 | $10.00 | 8x |
+| `gpt-5-mini-2025-08-07` | 限时特价 | 0.6x | $0.15 | $1.20 | 默认(Azure+MJ) | 1x | $0.25 | $2.00 | 8x |
+| `gpt-5-nano-2025-08-07` | 限时特价 | 0.6x | $0.03 | $0.24 | 默认(Azure+MJ) | 1x | $0.05 | $0.40 | 8x |
+| `gpt-5-pro` | 限时特价 | 0.6x | $9.00 | $72.00 | 默认(Azure+MJ) | 1x | $15.00 | $120.00 | 8x |
+| `gpt-5.1-codex` | 限时特价 | 0.6x | $0.75 | $6.00 | 默认(Azure+MJ) | 1x | $1.25 | $10.00 | 8x |
+| `gpt-5.3-codex-spark` | Codex专属 | 0.8x | $1.40 | $11.20 | 默认(Azure+MJ) | 1x | $1.75 | $14.00 | 8x |
+| `gpt-5.4` | 限时特价 | 0.6x | $1.50 | $9.00 | 默认(Azure+MJ) | 1x | $2.50 | $15.00 | 6x |
+| `gpt-5.4-mini` | 限时特价 | 0.6x | $0.45 | $2.70 | 默认(Azure+MJ) | 1x | $0.75 | $4.50 | 6x |
+| `gpt-5.5` | Codex专属 | 0.8x | $4.00 | $24.00 | 默认(Azure+MJ) | 1x | $5.00 | $30.00 | 6x |
+| `gpt-5.6-luna` | Codex专属 | 0.8x | $0.80 | $4.80 | 默认(Azure+MJ) | 1x | $1.00 | $6.00 | 6x |
+| `gpt-5.6-luna-max` | Codex专属 | 0.8x | $0.80 | $4.80 | 默认(Azure+MJ) | 1x | $1.00 | $6.00 | 6x |
+| `gpt-5.6-sol` | Codex专属 | 0.8x | $4.00 | $24.00 | 默认(Azure+MJ) | 1x | $5.00 | $30.00 | 6x |
+| `gpt-5.6-sol-max` | Codex专属 | 0.8x | $4.00 | $24.00 | 默认(Azure+MJ) | 1x | $5.00 | $30.00 | 6x |
+| `gpt-5.6-sol-ultra` | Codex专属 | 0.8x | $4.00 | $24.00 | 默认(Azure+MJ) | 1x | $5.00 | $30.00 | 6x |
+| `gpt-5.6-terra` | Codex专属 | 0.8x | $2.00 | $12.00 | 默认(Azure+MJ) | 1x | $2.50 | $15.00 | 6x |
 
 <!-- GPT_PRICE_TABLE_END -->
 
@@ -93,17 +93,17 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 <!-- CLAUDE_PRICE_TABLE_START -->
 | 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |
 |------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|
-| `claude-haiku-4-5-20251001` | 默认(Azure+MJ) | 1x | $0.50 | $2.50 | 默认(Azure+MJ) | 1x | $0.50 | $2.50 | 5x |
-| `claude-opus-4-1-20250805` | 默认(Azure+MJ) | 1x | $7.50 | $37.50 | 默认(Azure+MJ) | 1x | $7.50 | $37.50 | 5x |
-| `claude-sonnet-4-20250514` | 默认(Azure+MJ) | 1x | $1.50 | $7.50 | 默认(Azure+MJ) | 1x | $1.50 | $7.50 | 5x |
-| `claude-sonnet-4-5-20250929` | 默认(Azure+MJ) | 1x | $1.50 | $7.50 | 默认(Azure+MJ) | 1x | $1.50 | $7.50 | 5x |
-| `claude-fable-5` | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 5x |
-| `claude-opus-4-5-20251101` | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 5x |
-| `claude-opus-4-6` | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 5x |
-| `claude-opus-4-7` | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 5x |
-| `claude-opus-4-8` | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 默认(Azure+MJ) | 1x | $2.50 | $12.50 | 5x |
-| `claude-sonnet-4-6` | 默认(Azure+MJ) | 1x | $1.50 | $7.50 | 默认(Azure+MJ) | 1x | $1.50 | $7.50 | 5x |
-| `claude-sonnet-5` | 默认(Azure+MJ) | 1x | $1.00 | $5.00 | 默认(Azure+MJ) | 1x | $1.00 | $5.00 | 5x |
+| `claude-haiku-4-5-20251001` | 默认(Azure+MJ) | 1x | $1.00 | $5.00 | 默认(Azure+MJ) | 1x | $1.00 | $5.00 | 5x |
+| `claude-opus-4-1-20250805` | 默认(Azure+MJ) | 1x | $15.00 | $75.00 | 默认(Azure+MJ) | 1x | $15.00 | $75.00 | 5x |
+| `claude-sonnet-4-20250514` | 默认(Azure+MJ) | 1x | $3.00 | $15.00 | 默认(Azure+MJ) | 1x | $3.00 | $15.00 | 5x |
+| `claude-sonnet-4-5-20250929` | 默认(Azure+MJ) | 1x | $3.00 | $15.00 | 默认(Azure+MJ) | 1x | $3.00 | $15.00 | 5x |
+| `claude-fable-5` | 默认(Azure+MJ) | 1x | $10.00 | $50.00 | 默认(Azure+MJ) | 1x | $10.00 | $50.00 | 5x |
+| `claude-opus-4-5-20251101` | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 5x |
+| `claude-opus-4-6` | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 5x |
+| `claude-opus-4-7` | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 5x |
+| `claude-opus-4-8` | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 默认(Azure+MJ) | 1x | $5.00 | $25.00 | 5x |
+| `claude-sonnet-4-6` | 默认(Azure+MJ) | 1x | $3.00 | $15.00 | 默认(Azure+MJ) | 1x | $3.00 | $15.00 | 5x |
+| `claude-sonnet-5` | 默认(Azure+MJ) | 1x | $2.00 | $10.00 | 默认(Azure+MJ) | 1x | $2.00 | $10.00 | 5x |
 
 <!-- CLAUDE_PRICE_TABLE_END -->
 
@@ -112,14 +112,14 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 <!-- GEMINI_PRICE_TABLE_START -->
 | 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |
 |------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|
-| `gemini-2.0-flash-lite` | 优质Gemini | 3.6x | $0.14 | $0.54 | 优质Gemini | 3.6x | $0.14 | $0.54 | 4x |
-| `gemini-2.5-flash` | Gemini-CLI混合 | 1x | $0.15 | $1.25 | Gemini-CLI混合 | 1x | $0.15 | $1.25 | 8.34x |
-| `gemini-2.5-flash-image` | 官方Gemini | 2.4x | $0.36 | $3.00 | 官方Gemini | 2.4x | $0.36 | $3.00 | 8.33x |
-| `gemini-2.5-flash-lite` | Gemini-CLI混合 | 1x | $0.05 | $0.20 | Gemini-CLI混合 | 1x | $0.05 | $0.20 | 4x |
-| `gemini-2.5-pro` | Gemini-CLI混合 | 1x | $0.62 | $5.00 | Gemini-CLI混合 | 1x | $0.62 | $5.00 | 8x |
-| `gemini-3.1-flash-lite` | Gemini-CLI混合 | 1x | $0.12 | $0.75 | Gemini-CLI混合 | 1x | $0.12 | $0.75 | 6x |
-| `gemini-3.5-flash` | Gemini-CLI混合 | 1x | $0.75 | $4.50 | Gemini-CLI混合 | 1x | $0.75 | $4.50 | 6x |
-| `gemini-3-pro-image` | 官方Gemini | 2.4x | $0.79 | $3.17 | 官方Gemini | 2.4x | $0.79 | $3.17 | 4x |
+| `gemini-2.0-flash-lite` | 优质Gemini | 3.6x | $0.27 | $1.08 | 优质Gemini | 3.6x | $0.27 | $1.08 | 4x |
+| `gemini-2.5-flash` | Gemini-CLI混合 | 1x | $0.30 | $2.50 | Gemini-CLI混合 | 1x | $0.30 | $2.50 | 8.34x |
+| `gemini-2.5-flash-image` | 官方Gemini | 2.4x | $0.72 | $6.00 | 官方Gemini | 2.4x | $0.72 | $6.00 | 8.33x |
+| `gemini-2.5-flash-lite` | Gemini-CLI混合 | 1x | $0.10 | $0.40 | Gemini-CLI混合 | 1x | $0.10 | $0.40 | 4x |
+| `gemini-2.5-pro` | Gemini-CLI混合 | 1x | $1.25 | $10.00 | Gemini-CLI混合 | 1x | $1.25 | $10.00 | 8x |
+| `gemini-3.1-flash-lite` | Gemini-CLI混合 | 1x | $0.25 | $1.50 | Gemini-CLI混合 | 1x | $0.25 | $1.50 | 6x |
+| `gemini-3.5-flash` | Gemini-CLI混合 | 1x | $1.50 | $9.00 | Gemini-CLI混合 | 1x | $1.50 | $9.00 | 6x |
+| `gemini-3-pro-image` | 官方Gemini | 2.4x | $1.58 | $6.34 | 官方Gemini | 2.4x | $1.58 | $6.34 | 4x |
 
 <!-- GEMINI_PRICE_TABLE_END -->
 
@@ -128,14 +128,14 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 <!-- DEEPSEEK_PRICE_TABLE_START -->
 | 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |
 |------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|
-| `deepseek-r1` | 限时特价 | 0.6x | $1.20 | $4.80 | 默认(Azure+MJ) | 1x | $2.00 | $8.00 | 4x |
-| `deepseek-r1-2025-01-20` | 限时特价 | 0.6x | $1.20 | $4.80 | 默认(Azure+MJ) | 1x | $2.00 | $8.00 | 4x |
-| `deepseek-r1-250528` | 限时特价 | 0.6x | $1.20 | $4.80 | 默认(Azure+MJ) | 1x | $2.00 | $8.00 | 4x |
-| `deepseek-r1-distill-qwen-32b` | 默认(Azure+MJ) | 1x | $1.00 | $3.00 | 默认(Azure+MJ) | 1x | $1.00 | $3.00 | 3x |
-| `deepseek-r1-distill-qwen-7b` | 默认(Azure+MJ) | 1x | $0.25 | $0.50 | 默认(Azure+MJ) | 1x | $0.25 | $0.50 | 2x |
-| `deepseek-reasoner` | 限时特价 | 0.6x | $1.20 | $4.80 | 默认(Azure+MJ) | 1x | $2.00 | $8.00 | 4x |
-| `deepseek-v3-1-250821` | 限时特价 | 0.6x | $1.20 | $3.60 | 默认(Azure+MJ) | 1x | $2.00 | $6.00 | 3x |
-| `deepseek-v3-1-think-250821` | 默认(Azure+MJ) | 1x | $2.00 | $6.00 | 默认(Azure+MJ) | 1x | $2.00 | $6.00 | 3x |
+| `deepseek-r1` | 限时特价 | 0.6x | $2.40 | $9.60 | 默认(Azure+MJ) | 1x | $4.00 | $16.00 | 4x |
+| `deepseek-r1-2025-01-20` | 限时特价 | 0.6x | $2.40 | $9.60 | 默认(Azure+MJ) | 1x | $4.00 | $16.00 | 4x |
+| `deepseek-r1-250528` | 限时特价 | 0.6x | $2.40 | $9.60 | 默认(Azure+MJ) | 1x | $4.00 | $16.00 | 4x |
+| `deepseek-r1-distill-qwen-32b` | 默认(Azure+MJ) | 1x | $2.00 | $6.00 | 默认(Azure+MJ) | 1x | $2.00 | $6.00 | 3x |
+| `deepseek-r1-distill-qwen-7b` | 默认(Azure+MJ) | 1x | $0.50 | $1.00 | 默认(Azure+MJ) | 1x | $0.50 | $1.00 | 2x |
+| `deepseek-reasoner` | 限时特价 | 0.6x | $2.40 | $9.60 | 默认(Azure+MJ) | 1x | $4.00 | $16.00 | 4x |
+| `deepseek-v3-1-250821` | 限时特价 | 0.6x | $2.40 | $7.20 | 默认(Azure+MJ) | 1x | $4.00 | $12.00 | 3x |
+| `deepseek-v3-1-think-250821` | 默认(Azure+MJ) | 1x | $4.00 | $12.00 | 默认(Azure+MJ) | 1x | $4.00 | $12.00 | 3x |
 
 <!-- DEEPSEEK_PRICE_TABLE_END -->
 
@@ -144,16 +144,16 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 <!-- CN_MODEL_PRICE_TABLE_START -->
 | 模型 | 最低价分组 | 倍率 | 输入($/M) | 输出($/M) | 标准分组 | 倍率 | 输入($/M) | 输出($/M) | 出入比 |
 |------|-----------|------|-----------|-----------|---------|------|-----------|-----------|--------|
-| `doubao-seed-1-6-250615` | az渠道 | 1.5x | $0.60 | $6.00 | az渠道 | 1.5x | $0.60 | $6.00 | 10x |
-| `doubao-seed-1-6-251015` | az渠道 | 1.5x | $0.60 | $6.00 | az渠道 | 1.5x | $0.60 | $6.00 | 10x |
-| `doubao-seed-1-6-flash-250828` | az渠道 | 1.5x | $0.22 | $2.25 | az渠道 | 1.5x | $0.22 | $2.25 | 10x |
-| `doubao-seed-1-6-thinking-250615` | az渠道 | 1.5x | $0.60 | $6.00 | az渠道 | 1.5x | $0.60 | $6.00 | 10x |
-| `doubao-seed-1-6-thinking-250715` | az渠道 | 1.5x | $0.60 | $6.00 | az渠道 | 1.5x | $0.60 | $6.00 | 10x |
-| `doubao-seed-1-6-vision-250815` | az渠道 | 1.5x | $1.20 | $9.60 | az渠道 | 1.5x | $1.20 | $9.60 | 8x |
-| `glm-4.5` | 限时特价 | 0.6x | $0.48 | $1.92 | 默认(Azure+MJ) | 1x | $0.80 | $3.20 | 4x |
-| `glm-4.5-air` | 限时特价 | 0.6x | $0.24 | $1.80 | 默认(Azure+MJ) | 1x | $0.40 | $3.00 | 7.5x |
-| `glm-4.5-airx` | 默认(Azure+MJ) | 1x | $2.00 | $8.00 | 默认(Azure+MJ) | 1x | $2.00 | $8.00 | 4x |
-| `glm-4.5-flash` | 默认(Azure+MJ) | 1x | $0.01 | $0.04 | 默认(Azure+MJ) | 1x | $0.01 | $0.04 | 4x |
+| `doubao-seed-1-6-250615` | az渠道 | 1.5x | $1.20 | $12.00 | az渠道 | 1.5x | $1.20 | $12.00 | 10x |
+| `doubao-seed-1-6-251015` | az渠道 | 1.5x | $1.20 | $12.00 | az渠道 | 1.5x | $1.20 | $12.00 | 10x |
+| `doubao-seed-1-6-flash-250828` | az渠道 | 1.5x | $0.45 | $4.50 | az渠道 | 1.5x | $0.45 | $4.50 | 10x |
+| `doubao-seed-1-6-thinking-250615` | az渠道 | 1.5x | $1.20 | $12.00 | az渠道 | 1.5x | $1.20 | $12.00 | 10x |
+| `doubao-seed-1-6-thinking-250715` | az渠道 | 1.5x | $1.20 | $12.00 | az渠道 | 1.5x | $1.20 | $12.00 | 10x |
+| `doubao-seed-1-6-vision-250815` | az渠道 | 1.5x | $2.40 | $19.20 | az渠道 | 1.5x | $2.40 | $19.20 | 8x |
+| `glm-4.5` | 限时特价 | 0.6x | $0.96 | $3.84 | 默认(Azure+MJ) | 1x | $1.60 | $6.40 | 4x |
+| `glm-4.5-air` | 限时特价 | 0.6x | $0.48 | $3.60 | 默认(Azure+MJ) | 1x | $0.80 | $6.00 | 7.5x |
+| `glm-4.5-airx` | 默认(Azure+MJ) | 1x | $4.00 | $16.00 | 默认(Azure+MJ) | 1x | $4.00 | $16.00 | 4x |
+| `glm-4.5-flash` | 默认(Azure+MJ) | 1x | $0.02 | $0.08 | 默认(Azure+MJ) | 1x | $0.02 | $0.08 | 4x |
 
 <!-- CN_MODEL_PRICE_TABLE_END -->
 

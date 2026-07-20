@@ -72,9 +72,9 @@ def gen_table(data, model_ids, category_name):
                 gr = gval.get("GroupRatio", 1)
                 price = mp[mid].get("price", 0)
                 cr = ratios.get(mid, 1)
-                actual_in = price * gr
+                actual_in = price * gr * 2  # 前端公式: 2 × model_ratio × group_ratio
                 cr_num = cr if isinstance(cr, (int, float)) else 1
-                actual_out = actual_in * cr_num
+                actual_out = actual_in * cr_num  # 输出 = 输入 × completion_ratio
                 display = shorten_name(gval.get("DisplayName", gname))
                 model_to_groups[mid].append({
                     "group": display,
