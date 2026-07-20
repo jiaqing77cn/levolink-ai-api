@@ -1,12 +1,14 @@
 <!--
 SEO Keywords: AI API中转站, Claude API中转, GPT API中转, OpenAI代理,
-LLM网关, 大模型API, API转发, AI代理, 国内直连API,
-免翻墙API, Claude Code, Codex, Gemini API, DeepSeek API,
-聚合API, 中转API, 低价API, 按量计费API
-Description: 国内 AI API 中转站完全指南 - 500+ 模型(Claude/GPT/Gemini/DeepSeek)免翻墙国内直连，OpenAI 兼容，低延迟，支持 Claude Code。
+GPT-5.6 API, GPT-5.6 Sol, Claude 4.8 API, Claude Opus 4.8, Claude Sonnet 4.6,
+Claude Code 中转, Codex 中转, Gemini API, DeepSeek API,
+大模型API, API转发, AI代理, 国内API, 国内直连API,
+免翻墙API, 聚合API, 中转API, 低价API, 按量计费API,
+API 代理服务, 大模型中转, LLM网关, AI API gateway
+Description: 国内 AI API 中转站 - 500+ 模型(GPT-5.6/Claude 4.8/Gemini 3.5/DeepSeek R1)免翻墙国内直连，OpenAI 兼容，低延迟，支持 Claude Code。33 个分组可选，最低 1 元起充。
 -->
 
-<h1 align="center">🚀 国内 AI API 中转站完全指南</h1>
+<h1 align="center">🚀 国内 AI API 中转站 | GPT-5.6/Claude 4.8/Gemini/DeepSeek 免翻墙直连</h1>
 
 <div align="center">
 

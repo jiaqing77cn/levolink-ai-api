@@ -1,15 +1,15 @@
 <!--
 SEO Keywords: AI API proxy, Claude API proxy, GPT API proxy, OpenAI proxy,
-LLM gateway, LLM API, API middleware, AI forwarding, model gateway,
-500+ AI models, DeepSeek API, Gemini API, Anthropic API, Claude Code,
+GPT-5.6 API, GPT-5.6 Sol, Claude 4.8 API, Claude Opus 4.8, Claude Sonnet 4.6,
+Claude Code proxy, Codex proxy, LLM gateway China, API relay service,
 OpenAI compatible, China API access, without VPN, pay-per-token, streaming API,
-API中转站, Claude API中转, GPT API中转, 中转API, API转发,
-国内直连, 免翻墙API, 大模型API, 聚合API, 大模型聚合,
-AI代理, Claude中转, GPT中转, OpenAI代理, 低价API
-Description: AI API proxy for China - access 500+ models (Claude/GPT/Gemini/DeepSeek) without VPN. OpenAI-compatible, low latency, Claude Code ready. 大模型聚合API中转站，免翻墙国内直连。
+cheapest Claude API, openai api alternative, api forwarding service,
+AI API 中转站, Claude API 中转, GPT API 中转, 中转 API, API 转发,
+国内直连, 免翻墙 API, 大模型 API, 聚合 API, AI 代理, 低价 API
+Description: AI API proxy for China - access 500+ models (GPT-5.6/Claude 4.8/Gemini 3.5/DeepSeek R1) without VPN. OpenAI-compatible, low latency, Claude Code ready. 33 groups, 1 yuan min top-up.
 -->
 
-<h1 align="center">🚀 Complete Guide to AI API Proxy Services in China | Levolink AI</h1>
+<h1 align="center">🚀 AI API Proxy in China Without VPN | Claude/GPT/Gemini/DeepSeek | Levolink AI</h1>
 
 <div align="center">
 
