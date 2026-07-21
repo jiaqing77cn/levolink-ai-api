@@ -16,11 +16,67 @@ README_PATH = os.environ.get("README_PATH", "README.md")
 
 
 def fetch_pricing():
-    """Fetch pricing data from API"""
+    """Fetch pricing data from API.
+    
+    API response format changed: `data` is now a list of model objects
+    instead of a dict with model_info/model_group/model_completion_ratio.
+    We transform it back to the expected internal structure.
+    """
     req = urllib.request.Request(API_URL)
     with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.load(resp)
-    return data.get("data", {})
+        raw = json.load(resp)
+    
+    model_list = raw.get("data", [])
+    group_ratio = raw.get("group_ratio", {})
+    
+    # If data is already a dict (old format), return as-is
+    if isinstance(model_list, dict):
+        return model_list
+    
+    # --- Transform new list format to old dict format ---
+    
+    # model_info: {model_name: model_obj}
+    model_info = {}
+    # model_completion_ratio: {model_name: ratio}
+    completion_ratios = {}
+    # Build a mapping: for each group, which models are available and their base price
+    # Old format: model_group[gname] = {"DisplayName": ..., "GroupRatio": ..., "ModelPrice": {mid: {"price": ...}}}
+    model_group = {}
+    
+    for gname, gr in group_ratio.items():
+        model_group[gname] = {
+            "DisplayName": gname,
+            "GroupRatio": gr,
+            "ModelPrice": {}
+        }
+    
+    for m in model_list:
+        mid = m.get("model_name", "")
+        if not mid:
+            continue
+        
+        model_info[mid] = m
+        cr = m.get("completion_ratio", 1)
+        # cr could be None or non-numeric
+        if not isinstance(cr, (int, float)):
+            cr = 1
+        completion_ratios[mid] = cr
+        
+        # model_ratio is the base price multiplier; model_price is for fixed-price models
+        base_price = m.get("model_ratio", 0)
+        if not isinstance(base_price, (int, float)):
+            base_price = 0
+        
+        # Add this model to each of its enabled groups
+        for gname in m.get("enable_groups", []):
+            if gname in model_group:
+                model_group[gname]["ModelPrice"][mid] = {"price": base_price}
+    
+    return {
+        "model_info": model_info,
+        "model_group": model_group,
+        "model_completion_ratio": completion_ratios,
+    }
 
 
 # --- Group name shortening ---
