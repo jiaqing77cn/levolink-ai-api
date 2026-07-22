@@ -25,7 +25,7 @@ Description: 国内 AI API 中转站 - 500+ 模型(GPT-5.6/Claude 4.8/Gemini 3.5
 
 </div>
 
-> 最后更新：2026-07-22 13:18 (UTC+8) | [English](./README_EN.md) | 中文
+> 最后更新：2026-07-22 16:12 (UTC+8) | [English](./README_EN.md) | 中文
 
 ---
 
