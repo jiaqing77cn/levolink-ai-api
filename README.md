@@ -25,7 +25,7 @@ Description: 国内 AI API 中转站 - 500+ 模型(GPT-5.6/Claude 4.8/Gemini 3.5
 
 </div>
 
-> 最后更新：2026-07-23 13:46 (UTC+8) | [English](./README_EN.md) | 中文
+> 最后更新：2026-07-23 16:16 (UTC+8) | [English](./README_EN.md) | 中文
 
 ---
 
@@ -127,7 +127,7 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 | `claude-opus-4-6` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
 | `claude-opus-4-7` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
 | `claude-opus-4-8` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
-| `claude-sonnet-4-20250514` | default | 1x | $3.00 | $15.00 | Claude Code专… | 2.4x | $7.20 | $36.00 | 5x |
+| `claude-sonnet-4-20250514` | default | 1x | $3.00 | $15.00 | 官转克劳德1 | 4x | $12.00 | $60.00 | 5x |
 | `claude-sonnet-4-5-20250929` | default | 1x | $3.00 | $15.00 | Claude Code专… | 2.4x | $7.20 | $36.00 | 5x |
 | `claude-sonnet-4-6` | default | 1x | $3.00 | $15.00 | Claude Code专… | 2.4x | $7.20 | $36.00 | 5x |
 | `claude-sonnet-5` | default | 1x | $2.00 | $10.00 | Claude Code专… | 2.4x | $4.80 | $24.00 | 5x |
