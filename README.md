@@ -385,12 +385,6 @@ ai-api api-proxy claude gpt openai gemini deepseek api-relay china llm-gateway c
 
 ---
 
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=jiaqing77cn/levolink-ai-api&type=Date)](https://star-history.com/#jiaqing77cn/levolink-ai-api&Date)
-
----
-
 ## License
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
