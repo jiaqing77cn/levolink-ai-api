@@ -1,8 +1,15 @@
 <h1 align="center">🚀 国内 AI API 中转站 | GPT-5.6/Claude 4.8/Gemini/DeepSeek 免翻墙直连</h1>
 
 <div align="center">
+  <a href="https://github.com/jiaqing77cn/levolink-ai-api/stargazers"><img src="https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social" alt="Stars"/></a>
+  <a href="https://github.com/jiaqing77cn/levolink-ai-api/network/members"><img src="https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social" alt="Forks"/></a>
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/>
+  <img src="https://img.shields.io/badge/500%2B-Models-34d399?style=flat" alt="Models"/>
+  <img src="https://img.shields.io/badge/CDN-China%20加速-3b82f6?style=flat" alt="CDN"/>
+  <img src="https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat" alt="OpenAI Compatible"/>
+</div>
 
-![Stars](https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social) ![Forks](https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social) ![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat) ![CDN](https://img.shields.io/badge/CDN-China%20加速-3b82f6?style=flat) ![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat)
+<div align="center">
 
 **免翻墙 · 低延迟 · 500+ 模型 · OpenAI 兼容 · Claude Code 就绪**
 
