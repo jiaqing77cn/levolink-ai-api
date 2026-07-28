@@ -15,7 +15,7 @@
 
 </div>
 
-> 最后更新：2026-07-28 09:51 (UTC+8) | [English](./README_EN.md) | 中文
+> 最后更新：2026-07-28 12:58 (UTC+8) | [English](./README_EN.md) | 中文
 
 ---
 
