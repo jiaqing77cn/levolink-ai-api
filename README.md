@@ -21,6 +21,7 @@
 
 ## 📋 目录
 
+- [🖥️ 产品预览](#-产品预览)
 - [🔍 中转站选购指南](#-中转站选购指南)
 - [💰 实时模型价格](#-实时模型价格)
 - [🛠️ 接入教程](#-接入教程)
@@ -34,6 +35,8 @@
 ## 🖥️ 产品预览
 
 ![Levolink AI 首页 - 500+ AI 模型 API 中转平台](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/homepage.jpg)
+
+![Levolink AI 控制台 - 创建 API Key、查看用量、充值](https://raw.githubusercontent.com/jiaqing77cn/levolink-ai-api/main/assets/console.jpg)
 
 ---
 
@@ -245,7 +248,7 @@ curl https://ai.levolink.com/v1/chat/completions \
   }'
 ```
 
-完整示例见 [examples/](./examples/) 目录。
+完整示例见 [examples/](./examples/) 目录（含 [Python](examples/quickstart.py) / [Node.js](examples/quickstart.js) / [Shell](examples/quickstart.sh)）。
 
 ### Claude Code
 
@@ -259,6 +262,8 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
+📖 详细教程见 [Claude Code 接入教程](docs/claude-code-guide.md)
+
 ### OpenAI Codex
 
 ```bash
@@ -268,6 +273,8 @@ export OPENAI_API_KEY="你的API Key"
 export OPENAI_API_BASE="https://ai.levolink.com/v1"
 ```
 
+📖 详细教程见 [Codex 接入教程](docs/codex-setup.md)
+
 ### Gemini CLI
 
 ```bash
@@ -276,6 +283,8 @@ npm install -g @google/gemini-cli
 export GEMINI_API_KEY="你的API Key"
 export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ```
+
+📖 详细教程见 [Cursor IDE 配置教程](docs/cursor-setup.md)（同样适用于 Gemini CLI 配置）
 
 ### 工具集成
 
@@ -374,14 +383,6 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 - 💡 新功能建议 -> 发起 [Discussion](https://github.com/jiaqing77cn/levolink-ai-api/discussions)
 - 📄 贡献指南 -> 见 [CONTRIBUTING.md](./CONTRIBUTING.md)
 - 📋 更新日志 -> 见 [CHANGELOG.md](./CHANGELOG.md)
-
-### 推荐 GitHub Topics
-
-在仓库 Settings 里添加以下 Topics 标签，提升搜索发现率：
-
-```
-ai-api api-proxy claude gpt openai gemini deepseek api-relay china llm-gateway claude-code
-```
 
 ---
 

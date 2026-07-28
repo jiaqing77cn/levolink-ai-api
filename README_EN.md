@@ -248,7 +248,7 @@ curl https://ai.levolink.com/v1/chat/completions \
   }'
 ```
 
-Full examples in [`examples/`](./examples/) directory.
+Full examples in [`examples/`](./examples/) directory (incl. [Python](examples/quickstart.py) / [Node.js](examples/quickstart.js) / [Shell](examples/quickstart.sh)).
 
 ### Claude Code
 
@@ -262,6 +262,8 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
+📖 Full guide: [Claude Code Setup](docs/claude-code-guide.md)
+
 ### OpenAI Codex
 
 ```bash
@@ -270,6 +272,8 @@ export OPENAI_API_KEY="***"
 export OPENAI_API_BASE="https://ai.levolink.com/v1"
 ```
 
+📖 Full guide: [Codex Setup](docs/codex-setup.md)
+
 ### Gemini CLI
 
 ```bash
@@ -277,6 +281,8 @@ npm install -g @google/gemini-cli
 export GEMINI_API_KEY="***"
 export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ```
+
+📖 Full guide: [Cursor IDE Setup](docs/cursor-setup.md) (also applies to Gemini CLI)
 
 ### Tool Integrations
 
@@ -376,14 +382,6 @@ Yes. Settings -> Identity Verification -> Wallet -> Invoice. E-invoice issued wi
 - 💡 Feature request -> [Start a Discussion](https://github.com/jiaqing77cn/levolink-ai-api/discussions)
 - 📄 Contributing guide -> See [CONTRIBUTING.md](./CONTRIBUTING.md)
 - 📋 Changelog -> See [CHANGELOG.md](./CHANGELOG.md)
-
-### Recommended GitHub Topics
-
-Add these Topics in repo Settings to improve discoverability:
-
-```
-ai-api api-proxy claude gpt openai gemini deepseek api-relay china llm-gateway claude-code
-```
 
 ---
 
