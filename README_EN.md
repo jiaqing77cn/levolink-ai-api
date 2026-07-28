@@ -396,12 +396,3 @@ ai-api api-proxy claude gpt openai gemini deepseek api-relay china llm-gateway c
 ## 📜 License
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
-
----
-
-<details>
-<summary>🔍 Keywords</summary>
-
-AI API proxy · Claude API proxy · GPT API proxy · OpenAI proxy · API forwarding service · LLM gateway · China API access · without VPN API · aggregated API · pay per token API · Claude Code proxy · Codex proxy · Gemini CLI China · DeepSeek API proxy · large model API · API relay service · cheap API · OpenAI compatible API
-
-</details>
