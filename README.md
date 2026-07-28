@@ -2,12 +2,7 @@
 
 <div align="center">
 
-![Stars](https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social)
-![Forks](https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat)
-![CDN](https://img.shields.io/badge/CDN-China%20加速-3b82f6?style=flat)
-![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat)
+![Stars](https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social) ![Forks](https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social) ![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Models](https://img.shields.io/badge/500%2B-Models-34d399?style=flat) ![CDN](https://img.shields.io/badge/CDN-China%20加速-3b82f6?style=flat) ![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat)
 
 **免翻墙 · 低延迟 · 500+ 模型 · OpenAI 兼容 · Claude Code 就绪**
 
@@ -27,7 +22,7 @@
 - [📊 竞品对比](#-竞品对比)
 - [❓ FAQ](#-faq)
 - [📖 深入教程](#-深入教程)
-- [🤝 贡献](#-贡献)(#-贡献)
+- [🤝 贡献](#-贡献)
 
 ---
 
