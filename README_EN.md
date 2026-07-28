@@ -1,13 +1,9 @@
-<!--
-SEO Keywords: AI API proxy, Claude API proxy, GPT API proxy, OpenAI proxy,
-GPT-5.6 API, GPT-5.6 Sol, Claude 4.8 API, Claude Opus 4.8, Claude Sonnet 4.6,
-Claude Code proxy, Codex proxy, LLM gateway China, API relay service,
-OpenAI compatible, China API access, without VPN, pay-per-token, streaming API,
-cheapest Claude API, openai api alternative, api forwarding service,
-AI API 中转站, Claude API 中转, GPT API 中转, 中转 API, API 转发,
-国内直连, 免翻墙 API, 大模型 API, 聚合 API, AI 代理, 低价 API
-Description: AI API proxy for China - access 500+ models (GPT-5.6/Claude 4.8/Gemini 3.5/DeepSeek R1) without VPN. OpenAI-compatible, low latency, Claude Code ready. 33 groups, 1 yuan min top-up.
--->
+<details>
+<summary>🔍 Keyword Index (click to expand)</summary>
+
+AI API proxy · Claude API proxy · GPT API proxy · OpenAI proxy · API forwarding service · LLM gateway · China API access · without VPN API · aggregated API · pay per token API · Claude Code proxy · Codex proxy · Gemini CLI China · DeepSeek API proxy · large model API · API relay service · cheap API · OpenAI compatible API
+
+</details>
 
 <h1 align="center">🚀 AI API Proxy in China Without VPN | Claude/GPT/Gemini/DeepSeek | Levolink AI</h1>
 
@@ -38,6 +34,7 @@ Description: AI API proxy for China - access 500+ models (GPT-5.6/Claude 4.8/Gem
 - [🛠️ Integration Guide](#-integration-guide)
 - [📊 Comparison](#-comparison)
 - [❓ FAQ](#-faq)
+- [📖 In-Depth Guides](#-in-depth-guides)
 - [🤝 Contributing](#-contributing)
 
 ---
@@ -309,7 +306,7 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 ---
 
-## 📊 Comparison
+## 📊 2026 Comparison & Review
 
 | | [Levolink AI](https://ai.levolink.com) | SiliconFlow | Other Proxies | Self-Built |
 |--|-------------|-------------|---------------|------------|
@@ -362,6 +359,21 @@ Yes. Settings -> Identity Verification -> Wallet -> Invoice. E-invoice issued wi
 - Balanced: Default (1.0x)
 - High quality: Claude Code Exclusive (2.4x) / Azure (3.0x)
 - Maximum quality: Vertex (6.0x) / Official Premium (16.0x)
+
+---
+
+## 📖 In-Depth Guides
+
+| Guide | Content |
+|-------|---------|
+| [Claude Code Setup Guide](docs/claude-code-guide.md) | Complete Claude Code configuration for China |
+| [Cursor IDE Setup](docs/cursor-setup.md) | Use GPT-5.6 / Claude 4.8 / Gemini in Cursor |
+| [Model Selection Guide](docs/model-selection-guide.md) | Which of 228 models to choose? By use case & budget |
+| [Fraud Detection Guide](docs/fraud-detection-guide.md) | 5 methods to detect model swapping in API proxies |
+| [Codex Setup Guide](docs/codex-setup.md) | OpenAI Codex CLI configuration for China |
+| [Dify Integration Guide](docs/dify-integration.md) | Connect Dify with Levolink AI |
+| [Cost Calculator Guide](docs/cost-calculator-guide.md) | Estimate API costs and optimize spending |
+| [Awesome List Submission](docs/awesome-list-submission.md) | Backlink building strategy |
 
 ---
 

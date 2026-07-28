@@ -1,12 +1,9 @@
-<!--
-SEO Keywords: AI API中转站, Claude API中转, GPT API中转, OpenAI代理,
-GPT-5.6 API, GPT-5.6 Sol, Claude 4.8 API, Claude Opus 4.8, Claude Sonnet 4.6,
-Claude Code 中转, Codex 中转, Gemini API, DeepSeek API,
-大模型API, API转发, AI代理, 国内API, 国内直连API,
-免翻墙API, 聚合API, 中转API, 低价API, 按量计费API,
-API 代理服务, 大模型中转, LLM网关, AI API gateway
-Description: 国内 AI API 中转站 - 500+ 模型(GPT-5.6/Claude 4.8/Gemini 3.5/DeepSeek R1)免翻墙国内直连，OpenAI 兼容，低延迟，支持 Claude Code。33 个分组可选，最低 1 元起充。
--->
+<details>
+<summary>🔍 关键词索引（点击展开）</summary>
+
+AI API中转站 · Claude API中转 · GPT API中转 · OpenAI代理 · API转发服务 · LLM网关 · 国内直连API · 免翻墙API · 聚合API · 按量计费API · Claude Code中转 · Codex中转 · Gemini CLI国内 · DeepSeek API代理 · 大模型API · API代理服务 · 中转API · 低价API · OpenAI兼容API
+
+</details>
 
 <h1 align="center">🚀 国内 AI API 中转站 | GPT-5.6/Claude 4.8/Gemini/DeepSeek 免翻墙直连</h1>
 
@@ -36,7 +33,8 @@ Description: 国内 AI API 中转站 - 500+ 模型(GPT-5.6/Claude 4.8/Gemini 3.5
 - [🛠️ 接入教程](#-接入教程)
 - [📊 竞品对比](#-竞品对比)
 - [❓ FAQ](#-faq)
-- [🤝 贡献](#-贡献)
+- [📖 深入教程](#-深入教程)
+- [🤝 贡献](#-贡献)(#-贡献)
 
 ---
 
@@ -306,7 +304,7 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 ---
 
-## 📊 竞品对比
+## 📊 2026 年竞品对比评测
 
 | 维度 | Levolink AI | 硅基流动 | 神马中转 | 自建代理 |
 |------|------------|---------|---------|---------|
@@ -359,6 +357,21 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 - 平衡：default(1.0x)
 - 高质量：Claude Code专属(2.4x) / Azure(3.0x)
 - 最高质量：Vertex(6.0x) / 正价官转(16.0x)
+
+---
+
+## 📖 深入教程
+
+| 教程 | 内容 |
+|------|------|
+| [Claude Code 接入教程](docs/claude-code-guide.md) | 国内使用 Claude Code 的完整配置方案 |
+| [Cursor IDE 配置教程](docs/cursor-setup.md) | Cursor 中接入 GPT-5.6 / Claude 4.8 / Gemini |
+| [模型选择指南](docs/model-selection-guide.md) | 228 个模型怎么选？按场景/预算推荐 |
+| [中转站掺水检测指南](docs/fraud-detection-guide.md) | 5 种方法检测中转站是否用低端模型冒充 |
+| [Codex 接入教程](docs/codex-setup.md) | OpenAI Codex CLI 国内配置方法 |
+| [Dify 接入教程](docs/dify-integration.md) | Dify 对接 Levolink AI 完整流程 |
+| [成本计算器使用指南](docs/cost-calculator-guide.md) | 估算 API 调用成本，优化开支 |
+| [Awesome 列表提交指南](docs/awesome-list-submission.md) | 外链建设策略 |
 
 ---
 

@@ -1,12 +1,15 @@
 {
   "name": "levolink-ai-api-examples",
   "version": "1.0.0",
-  "description": "AI API Proxy — Access Claude/GPT/Gemini/DeepSeek in China. 500+ models, OpenAI-compatible, Claude Code ready.",
+  "description": "AI API Proxy for China - Access 500+ models (GPT-5.6/Claude 4.8/Gemini/DeepSeek) without VPN. OpenAI-compatible, Claude Code ready, pay-per-token, 33 channel groups.",
   "homepage": "https://ai.levolink.com",
   "license": "MIT",
   "keywords": [
     "ai-api", "api-proxy", "openai", "claude", "gpt",
-    "gemini", "deepseek", "llm", "china"
+    "gemini", "deepseek", "llm", "china", "api-relay",
+    "llm-gateway", "claude-code", "codex", "api-forwarding",
+    "openai-compatible", "gemini-cli", "cursor-ide", "dify",
+    "qwen", "glm", "kimi", "pay-per-token", "china-api"
   ],
   "scripts": {
     "start": "node examples/quickstart.js"
