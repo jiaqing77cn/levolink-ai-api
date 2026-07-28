@@ -1,13 +1,11 @@
 <h1 align="center">🚀 AI API Proxy in China Without VPN | Claude/GPT/Gemini/DeepSeek | Levolink AI</h1>
 
-<div align="center">
-  <a href="https://github.com/jiaqing77cn/levolink-ai-api/stargazers"><img src="https://img.shields.io/github/stars/jiaqing77cn/levolink-ai-api?style=social" alt="Stars"/></a>
-  <a href="https://github.com/jiaqing77cn/levolink-ai-api/network/members"><img src="https://img.shields.io/github/forks/jiaqing77cn/levolink-ai-api?style=social" alt="Forks"/></a>
+<p align="center">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"/>
   <img src="https://img.shields.io/badge/500%2B-Models-34d399?style=flat" alt="Models"/>
   <img src="https://img.shields.io/badge/CDN-China%20Accel-3b82f6?style=flat" alt="CDN"/>
   <img src="https://img.shields.io/badge/OpenAI-Compatible-10a37f?style=flat" alt="OpenAI Compatible"/>
-</div>
+</p>
 
 <div align="center">
 
