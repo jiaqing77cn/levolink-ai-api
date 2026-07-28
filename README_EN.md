@@ -1,10 +1,3 @@
-<details>
-<summary>🔍 Keyword Index (click to expand)</summary>
-
-AI API proxy · Claude API proxy · GPT API proxy · OpenAI proxy · API forwarding service · LLM gateway · China API access · without VPN API · aggregated API · pay per token API · Claude Code proxy · Codex proxy · Gemini CLI China · DeepSeek API proxy · large model API · API relay service · cheap API · OpenAI compatible API
-
-</details>
-
 <h1 align="center">🚀 AI API Proxy in China Without VPN | Claude/GPT/Gemini/DeepSeek | Levolink AI</h1>
 
 <div align="center">
@@ -373,7 +366,6 @@ Yes. Settings -> Identity Verification -> Wallet -> Invoice. E-invoice issued wi
 | [Codex Setup Guide](docs/codex-setup.md) | OpenAI Codex CLI configuration for China |
 | [Dify Integration Guide](docs/dify-integration.md) | Connect Dify with Levolink AI |
 | [Cost Calculator Guide](docs/cost-calculator-guide.md) | Estimate API costs and optimize spending |
-| [Awesome List Submission](docs/awesome-list-submission.md) | Backlink building strategy |
 
 ---
 
@@ -404,3 +396,12 @@ ai-api api-proxy claude gpt openai gemini deepseek api-relay china llm-gateway c
 ## 📜 License
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
+
+---
+
+<details>
+<summary>🔍 Keywords</summary>
+
+AI API proxy · Claude API proxy · GPT API proxy · OpenAI proxy · API forwarding service · LLM gateway · China API access · without VPN API · aggregated API · pay per token API · Claude Code proxy · Codex proxy · Gemini CLI China · DeepSeek API proxy · large model API · API relay service · cheap API · OpenAI compatible API
+
+</details>

@@ -1,10 +1,3 @@
-<details>
-<summary>🔍 关键词索引（点击展开）</summary>
-
-AI API中转站 · Claude API中转 · GPT API中转 · OpenAI代理 · API转发服务 · LLM网关 · 国内直连API · 免翻墙API · 聚合API · 按量计费API · Claude Code中转 · Codex中转 · Gemini CLI国内 · DeepSeek API代理 · 大模型API · API代理服务 · 中转API · 低价API · OpenAI兼容API
-
-</details>
-
 <h1 align="center">🚀 国内 AI API 中转站 | GPT-5.6/Claude 4.8/Gemini/DeepSeek 免翻墙直连</h1>
 
 <div align="center">
@@ -371,7 +364,6 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 | [Codex 接入教程](docs/codex-setup.md) | OpenAI Codex CLI 国内配置方法 |
 | [Dify 接入教程](docs/dify-integration.md) | Dify 对接 Levolink AI 完整流程 |
 | [成本计算器使用指南](docs/cost-calculator-guide.md) | 估算 API 调用成本，优化开支 |
-| [Awesome 列表提交指南](docs/awesome-list-submission.md) | 外链建设策略 |
 
 ---
 
@@ -402,3 +394,12 @@ ai-api api-proxy claude gpt openai gemini deepseek api-relay china llm-gateway c
 ## License
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
+
+---
+
+<details>
+<summary>🔍 关键词</summary>
+
+AI API中转站 · Claude API中转 · GPT API中转 · OpenAI代理 · API转发服务 · LLM网关 · 国内直连API · 免翻墙API · 聚合API · 按量计费API · Claude Code中转 · Codex中转 · Gemini CLI国内 · DeepSeek API代理 · 大模型API · API代理服务 · 中转API · 低价API · OpenAI兼容API
+
+</details>
