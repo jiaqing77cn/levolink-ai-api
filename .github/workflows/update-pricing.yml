@@ -2,8 +2,8 @@ name: Update Pricing
 
 on:
   schedule:
-    # 每小时更新一次 (北京时间每小时整点)
-    - cron: '0 * * * *'
+    # 每6小时更新一次 (北京时间 0/6/12/18 点)
+    - cron: '0 */6 * * *'
   workflow_dispatch: # 支持手动触发
 
 permissions:

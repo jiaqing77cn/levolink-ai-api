@@ -4,7 +4,7 @@
 
 ## OpenCode란?
 
-OpenCode는 오픈소스 AI 프로그래밍 어시스턴트(180K+ Stars)로, 터미널, 데스크톱, IDE 플러그인 세 가지 형태를 지원합니다. OpenAI 호환 API 엔드포인트를 설정하여 Levolink AI를 연결할 수 있습니다.
+OpenCode는 오픈소스 AI 프로그래밍 어시스턴트(160K+ Stars)로, 터미널, 데스크톱, IDE 플러그인 세 가지 형태를 지원합니다. OpenAI 호환 API 엔드포인트를 설정하여 Levolink AI를 연결할 수 있습니다.
 
 ## 설정 단계
 

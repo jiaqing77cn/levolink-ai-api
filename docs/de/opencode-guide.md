@@ -4,7 +4,7 @@
 
 ## Was ist OpenCode?
 
-OpenCode ist ein Open-Source-AI-Programmierassistent (180K+ Stars) und unterstützt Terminal-, Desktop- und IDE-Plugin-Formate. Durch die Konfiguration eines OpenAI-kompatiblen API-Endpunkts kann Levolink AI eingebunden werden.
+OpenCode ist ein Open-Source-AI-Programmierassistent (160K+ Stars) und unterstützt Terminal-, Desktop- und IDE-Plugin-Formate. Durch die Konfiguration eines OpenAI-kompatiblen API-Endpunkts kann Levolink AI eingebunden werden.
 
 ## Konfigurationsschritte
 

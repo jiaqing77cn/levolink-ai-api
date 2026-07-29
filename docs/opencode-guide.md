@@ -4,7 +4,7 @@
 
 ## 什么是 OpenCode
 
-OpenCode 是开源的 AI 编程助手（180K+ Stars），支持终端、桌面和 IDE 插件三种形态。通过配置 OpenAI 兼容的 API 端点，可以接入 Levolink AI。
+OpenCode 是开源的 AI 编程助手（160K+ Stars），支持终端、桌面和 IDE 插件三种形态。通过配置 OpenAI 兼容的 API 端点，可以接入 Levolink AI。
 
 ## 配置步骤
 

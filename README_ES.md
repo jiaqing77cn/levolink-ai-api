@@ -308,6 +308,8 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 ## 📊 Comparativa 2026
 
+> Basado en información pública al 2026-07-29. Solo como referencia.
+
 | | [Levolink AI](https://ai.levolink.com) | OpenRouter | SiliconFlow | Otros proxies | Autoconstruido |
 |--|-------------|-----------|-------------|---------------|------------|
 | Número de modelos | **228+** | ~400 | ~200 | ~100 | Manual |

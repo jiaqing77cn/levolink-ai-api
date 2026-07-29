@@ -15,7 +15,7 @@
     "start": "node examples/quickstart.js"
   },
   "dependencies": {
-    "openai": "^4.0.0"
+    "openai": "^4.80.0"
   },
   "repository": {
     "type": "git",
