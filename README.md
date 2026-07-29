@@ -204,6 +204,7 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 
 1. 前往 [Levolink AI](https://ai.levolink.com) -> 注册 -> 控制台创建 Key
 2. 充值（最低 1 元起充）
+   - 支付宝支付 / 微信支付 / 加密货币支付 / Stripe / Global Pay
 3. 选择代码示例接入：
 
 ### Python (OpenAI SDK)

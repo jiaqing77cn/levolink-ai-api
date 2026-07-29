@@ -204,6 +204,7 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 
 1. [Levolink AI](https://ai.levolink.com) 방문 -> 회원가입 -> 콘솔 -> 키 생성
 2. 충전 (최소 1위안)
+   - Alipay / WeChat Pay / Crypto Pay / Stripe / Global Pay
 3. 연동 방법 선택:
 
 ### Python (OpenAI SDK)

@@ -204,6 +204,7 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 
 1. [Levolink AI](https://ai.levolink.com) besuchen -> Registrieren -> Konsole -> Key erstellen
 2. Guthaben aufladen (mind. 1 Yuan)
+   - Alipay / WeChat Pay / Crypto Pay / Stripe / Global Pay
 3. Integrationsmethode wählen:
 
 ### Python (OpenAI SDK)
