@@ -262,7 +262,7 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
-📖 完全ガイド：[Claude Code セットアップ](docs/claude-code-guide.md)
+📖 完全ガイド：[Claude Code セットアップ](docs/ja/claude-code-guide.md)
 
 ### OpenAI Codex
 
@@ -272,7 +272,7 @@ export OPENAI_API_KEY="***"
 export OPENAI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 完全ガイド：[Codex セットアップ](docs/codex-setup.md)
+📖 完全ガイド：[Codex セットアップ](docs/ja/codex-setup.md)
 
 ### Gemini CLI
 
@@ -282,7 +282,7 @@ export GEMINI_API_KEY="***"
 export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 完全ガイド：[Cursor IDE セットアップ](docs/cursor-setup.md)（Gemini CLIにも適用）
+📖 完全ガイド：[Cursor IDE セットアップ](docs/ja/cursor-setup.md)（Gemini CLIにも適用）
 
 ### ツール統合
 
@@ -365,13 +365,13 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 | ガイド | 内容 |
 |-------|---------|
-| [Claude Code セットアップガイド](docs/claude-code-guide.md) | 中国向けClaude Codeの完全設定 |
-| [Cursor IDE セットアップ](docs/cursor-setup.md) | CursorでGPT-5.6 / Claude 4.8 / Geminiを使用 |
-| [モデル選択ガイド](docs/model-selection-guide.md) | 228モデルからどれを選ぶ？用途と予算別 |
-| [詐欺検出ガイド](docs/fraud-detection-guide.md) | APIプロキシでモデルすり替えを検出する5つの方法 |
-| [Codex セットアップガイド](docs/codex-setup.md) | 中国向けOpenAI Codex CLI設定 |
-| [Dify 統合ガイド](docs/dify-integration.md) | DifyとLevolink AIの連携 |
-| [コスト計算ガイド](docs/cost-calculator-guide.md) | APIコストの見積もりと最適化 |
+| [Claude Code セットアップガイド](docs/ja/claude-code-guide.md) | 中国向けClaude Codeの完全設定 |
+| [Cursor IDE セットアップ](docs/ja/cursor-setup.md) | CursorでGPT-5.6 / Claude 4.8 / Geminiを使用 |
+| [モデル選択ガイド](docs/ja/model-selection-guide.md) | 228モデルからどれを選ぶ？用途と予算別 |
+| [詐欺検出ガイド](docs/ja/fraud-detection-guide.md) | APIプロキシでモデルすり替えを検出する5つの方法 |
+| [Codex セットアップガイド](docs/ja/codex-setup.md) | 中国向けOpenAI Codex CLI設定 |
+| [Dify 統合ガイド](docs/ja/dify-integration.md) | DifyとLevolink AIの連携 |
+| [コスト計算ガイド](docs/ja/cost-calculator-guide.md) | APIコストの見積もりと最適化 |
 
 ---
 

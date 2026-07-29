@@ -262,7 +262,7 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
-📖 전체 가이드: [Claude Code 설정](docs/claude-code-guide.md)
+📖 전체 가이드: [Claude Code 설정](docs/ko/claude-code-guide.md)
 
 ### OpenAI Codex
 
@@ -272,7 +272,7 @@ export OPENAI_API_KEY="***"
 export OPENAI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 전체 가이드: [Codex 설정](docs/codex-setup.md)
+📖 전체 가이드: [Codex 설정](docs/ko/codex-setup.md)
 
 ### Gemini CLI
 
@@ -282,7 +282,7 @@ export GEMINI_API_KEY="***"
 export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 전체 가이드: [Cursor IDE 설정](docs/cursor-setup.md) (Gemini CLI에도 동일하게 적용)
+📖 전체 가이드: [Cursor IDE 설정](docs/ko/cursor-setup.md) (Gemini CLI에도 동일하게 적용)
 
 ### 도구 연동
 
@@ -365,13 +365,13 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 | 가이드 | 내용 |
 |--------|------|
-| [Claude Code 설정 가이드](docs/claude-code-guide.md) | 중국에서 Claude Code 완전 설정 |
-| [Cursor IDE 설정](docs/cursor-setup.md) | Cursor에서 GPT-5.6 / Claude 4.8 / Gemini 사용 |
-| [모델 선택 가이드](docs/model-selection-guide.md) | 228개 모델 중 무엇을 선택할까? 용도 및 예산별 |
-| [사기 감지 가이드](docs/fraud-detection-guide.md) | API 프록시에서 모델 치환을 감지하는 5가지 방법 |
-| [Codex 설정 가이드](docs/codex-setup.md) | 중국에서 OpenAI Codex CLI 설정 |
-| [Dify 연동 가이드](docs/dify-integration.md) | Dify와 Levolink AI 연결 |
-| [비용 계산기 가이드](docs/cost-calculator-guide.md) | API 비용 추정 및 지출 최적화 |
+| [Claude Code 설정 가이드](docs/ko/claude-code-guide.md) | 중국에서 Claude Code 완전 설정 |
+| [Cursor IDE 설정](docs/ko/cursor-setup.md) | Cursor에서 GPT-5.6 / Claude 4.8 / Gemini 사용 |
+| [모델 선택 가이드](docs/ko/model-selection-guide.md) | 228개 모델 중 무엇을 선택할까? 용도 및 예산별 |
+| [사기 감지 가이드](docs/ko/fraud-detection-guide.md) | API 프록시에서 모델 치환을 감지하는 5가지 방법 |
+| [Codex 설정 가이드](docs/ko/codex-setup.md) | 중국에서 OpenAI Codex CLI 설정 |
+| [Dify 연동 가이드](docs/ko/dify-integration.md) | Dify와 Levolink AI 연결 |
+| [비용 계산기 가이드](docs/ko/cost-calculator-guide.md) | API 비용 추정 및 지출 최적화 |
 
 ---
 

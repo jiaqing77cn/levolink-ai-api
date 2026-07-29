@@ -262,7 +262,7 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
-📖 Vollständiger Leitfaden: [Claude Code Setup](docs/claude-code-guide.md)
+📖 Vollständiger Leitfaden: [Claude Code Setup](docs/de/claude-code-guide.md)
 
 ### OpenAI Codex
 
@@ -272,7 +272,7 @@ export OPENAI_API_KEY="***"
 export OPENAI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 Vollständiger Leitfaden: [Codex Setup](docs/codex-setup.md)
+📖 Vollständiger Leitfaden: [Codex Setup](docs/de/codex-setup.md)
 
 ### Gemini CLI
 
@@ -282,7 +282,7 @@ export GEMINI_API_KEY="***"
 export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 Vollständiger Leitfaden: [Cursor IDE Setup](docs/cursor-setup.md) (gilt auch für Gemini CLI)
+📖 Vollständiger Leitfaden: [Cursor IDE Setup](docs/de/cursor-setup.md) (gilt auch für Gemini CLI)
 
 ### Tool-Integrationen
 
@@ -365,13 +365,13 @@ Ja. Settings -> Identitätsverifizierung -> Wallet -> Rechnung. E-Rechnung wird 
 
 | Leitfaden | Inhalt |
 |-----------|--------|
-| [Claude Code Setup Guide](docs/claude-code-guide.md) | Vollständige Claude-Code-Konfiguration für China |
-| [Cursor IDE Setup](docs/cursor-setup.md) | GPT-5.6 / Claude 4.8 / Gemini in Cursor verwenden |
-| [Model Selection Guide](docs/model-selection-guide.md) | Welches der 228 Modelle wählen? Nach Anwendungsfall & Budget |
-| [Fraud Detection Guide](docs/fraud-detection-guide.md) | 5 Methoden zur Erkennung von Modellaustausch bei API-Proxys |
-| [Codex Setup Guide](docs/codex-setup.md) | OpenAI Codex CLI-Konfiguration für China |
-| [Dify Integration Guide](docs/dify-integration.md) | Dify mit Levolink AI verbinden |
-| [Cost Calculator Guide](docs/cost-calculator-guide.md) | API-Kosten schätzen und Ausgaben optimieren |
+| [Claude Code Setup Guide](docs/de/claude-code-guide.md) | Vollständige Claude-Code-Konfiguration für China |
+| [Cursor IDE Setup](docs/de/cursor-setup.md) | GPT-5.6 / Claude 4.8 / Gemini in Cursor verwenden |
+| [Model Selection Guide](docs/de/model-selection-guide.md) | Welches der 228 Modelle wählen? Nach Anwendungsfall & Budget |
+| [Fraud Detection Guide](docs/de/fraud-detection-guide.md) | 5 Methoden zur Erkennung von Modellaustausch bei API-Proxys |
+| [Codex Setup Guide](docs/de/codex-setup.md) | OpenAI Codex CLI-Konfiguration für China |
+| [Dify Integration Guide](docs/de/dify-integration.md) | Dify mit Levolink AI verbinden |
+| [Cost Calculator Guide](docs/de/cost-calculator-guide.md) | API-Kosten schätzen und Ausgaben optimieren |
 
 ---
 

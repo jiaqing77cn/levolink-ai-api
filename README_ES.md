@@ -262,7 +262,7 @@ source ~/.bash_profile
 cd your-project && claude
 ```
 
-📖 Guía completa: [Configuración de Claude Code](docs/claude-code-guide.md)
+📖 Guía completa: [Configuración de Claude Code](docs/es/claude-code-guide.md)
 
 ### OpenAI Codex
 
@@ -272,7 +272,7 @@ export OPENAI_API_KEY="***"
 export OPENAI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 Guía completa: [Configuración de Codex](docs/codex-setup.md)
+📖 Guía completa: [Configuración de Codex](docs/es/codex-setup.md)
 
 ### Gemini CLI
 
@@ -282,7 +282,7 @@ export GEMINI_API_KEY="***"
 export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ```
 
-📖 Guía completa: [Configuración de Cursor IDE](docs/cursor-setup.md) (también aplica para Gemini CLI)
+📖 Guía completa: [Configuración de Cursor IDE](docs/es/cursor-setup.md) (también aplica para Gemini CLI)
 
 ### Integraciones con herramientas
 
@@ -365,13 +365,13 @@ Sí. Ajustes -> Verificación de identidad -> Billetera -> Factura. Factura elec
 
 | Guía | Contenido |
 |-------|---------|
-| [Guía de configuración de Claude Code](docs/claude-code-guide.md) | Configuración completa de Claude Code para China |
-| [Configuración de Cursor IDE](docs/cursor-setup.md) | Usar GPT-5.6 / Claude 4.8 / Gemini en Cursor |
-| [Guía de selección de modelos](docs/model-selection-guide.md) | ¿Cuál de los 228 modelos elegir? Por caso de uso y presupuesto |
-| [Guía de detección de fraude](docs/fraud-detection-guide.md) | 5 métodos para detectar sustitución de modelos en proxies de API |
-| [Guía de configuración de Codex](docs/codex-setup.md) | Configuración de OpenAI Codex CLI para China |
-| [Guía de integración con Dify](docs/dify-integration.md) | Conectar Dify con Levolink AI |
-| [Guía de calculadora de costos](docs/cost-calculator-guide.md) | Estima costos de API y optimiza el gasto |
+| [Guía de configuración de Claude Code](docs/es/claude-code-guide.md) | Configuración completa de Claude Code para China |
+| [Configuración de Cursor IDE](docs/es/cursor-setup.md) | Usar GPT-5.6 / Claude 4.8 / Gemini en Cursor |
+| [Guía de selección de modelos](docs/es/model-selection-guide.md) | ¿Cuál de los 228 modelos elegir? Por caso de uso y presupuesto |
+| [Guía de detección de fraude](docs/es/fraud-detection-guide.md) | 5 métodos para detectar sustitución de modelos en proxies de API |
+| [Guía de configuración de Codex](docs/es/codex-setup.md) | Configuración de OpenAI Codex CLI para China |
+| [Guía de integración con Dify](docs/es/dify-integration.md) | Conectar Dify con Levolink AI |
+| [Guía de calculadora de costos](docs/es/cost-calculator-guide.md) | Estima costos de API y optimiza el gasto |
 
 ---
 
