@@ -307,18 +307,18 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 ## 📊 Comparativa 2026
 
-| | [Levolink AI](https://ai.levolink.com) | SiliconFlow | Otros proxies | Autoconstruido |
-|--|-------------|-------------|---------------|------------|
-| Número de modelos | **500+** | ~200 | ~100 | Manual |
-| Opciones de grupos | **33 grupos** | Ninguna | 1-3 | - |
-| CDN en China | ✅ Multi-nodo | ✅ Único | ✅ | ❌ |
-| Recarga mínima | **1 yuan** | 50 yuan | 20 yuan | - |
-| Pago por uso | ✅ | ✅ | ✅ | ❌ |
-| Claude Code ready | ✅ | ✅ | ✅ | ❌ |
-| OpenAI compatible | ✅ | ✅ | ✅ | Necesita adaptador |
-| Transparencia de precios | ✅ 33 grupos | Precio único | Precio único | - |
-| Factura | ✅ | ✅ | ❌ | - |
-| Código abierto en GitHub | ✅ Precios automáticos | ❌ | ❌ | - |
+| | [Levolink AI](https://ai.levolink.com) | OpenRouter | SiliconFlow | Otros proxies | Autoconstruido |
+|--|-------------|-----------|-------------|---------------|------------|
+| Número de modelos | **500+** | ~400 | ~200 | ~100 | Manual |
+| Opciones de grupos | **33 grupos** | Ninguna (por proveedor) | Ninguna | 1-3 | - |
+| CDN en China | ✅ Multi-nodo | ❌ Sin nodos en China | ✅ Único | ✅ | ❌ |
+| Recarga mínima | **1 yuan** | ~$5 (~35 yuan) | 50 yuan | 20 yuan | - |
+| Pago por uso | ✅ | ✅ | ✅ | ✅ | ❌ |
+| Claude Code ready | ✅ | ✅ | ✅ | ✅ | ❌ |
+| OpenAI compatible | ✅ | ✅ | ✅ | ✅ | Necesita adaptador |
+| Transparencia de precios | ✅ 33 grupos | Por modelo, elección limitada | Precio único | Precio único | - |
+| Factura | ✅ | ❌ Sin factura china | ✅ | ❌ | - |
+| Código abierto en GitHub | ✅ Precios automáticos | ❌ | ❌ | ❌ | - |
 
 ---
 
