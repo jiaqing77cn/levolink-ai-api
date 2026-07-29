@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Levolink AI Pricing Generator
-从 API 拉取实时价格，生成 Markdown 表格写入 README.md (中英文)
+从 API 拉取实时价格，生成 Markdown 表格写入所有语言 README (中/英/韩/日/西/德)
 """
 
 import json
@@ -429,13 +429,41 @@ def main():
     # Write back
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(readme_cn)
+    print(f"  CN README updated")
 
     if readme_en:
         with open(readme_en_path, "w", encoding="utf-8") as f:
             f.write(readme_en)
-        print(f"  EN README also updated")
+        print(f"  EN README updated")
 
-    print(f"\n✅ README.md updated at {now.strftime('%Y-%m-%d %H:%M:%S')} UTC+8")
+    # Update additional language READMEs (KO/JA/ES/DE) with English price tables
+    extra_langs = [
+        ("README_KO.md", "KO"),
+        ("README_JA.md", "JA"),
+        ("README_ES.md", "ES"),
+        ("README_DE.md", "DE"),
+    ]
+    for fname, lang_code in extra_langs:
+        try:
+            with open(fname, "r", encoding="utf-8") as f:
+                content = f.read()
+            content = replace_section(content, "GPT_PRICE_TABLE", gpt_table_en)
+            content = replace_section(content, "CLAUDE_PRICE_TABLE", claude_table_en)
+            content = replace_section(content, "GEMINI_PRICE_TABLE", gemini_table_en)
+            content = replace_section(content, "DEEPSEEK_PRICE_TABLE", deepseek_table_en)
+            content = replace_section(content, "CN_MODEL_PRICE_TABLE", cn_table_en)
+            content = re.sub(
+                r'Last updated:[^|\n]*',
+                f'Last updated: {new_ts} (UTC+8)',
+                content
+            )
+            with open(fname, "w", encoding="utf-8") as f:
+                f.write(content)
+            print(f"  {lang_code} README updated")
+        except FileNotFoundError:
+            print(f"  Warning: {fname} not found, skipping")
+
+    print(f"\n✅ All READMEs updated at {now.strftime('%Y-%m-%d %H:%M:%S')} UTC+8")
     print(f"  GPT models: {len(gpt_hot)}")
     print(f"  Claude models: {len(claude_hot)}")
     print(f"  Gemini models: {len(gemini_hot)}")
