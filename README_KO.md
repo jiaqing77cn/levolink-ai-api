@@ -366,11 +366,17 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 | 가이드 | 내용 |
 |--------|------|
 | [Claude Code 설정 가이드](docs/ko/claude-code-guide.md) | 중국에서 Claude Code 완전 설정 |
+| [Claude Desktop 가이드](docs/ko/claude-desktop-guide.md) | Claude Desktop에 Levolink AI 설정 |
+| [Codex 설정 가이드](docs/ko/codex-setup.md) | 중국에서 OpenAI Codex CLI 설정 |
+| [Gemini CLI 가이드](docs/ko/gemini-cli-guide.md) | Gemini CLI로 Levolink AI 통해 Gemini 모델 사용 |
 | [Cursor IDE 설정](docs/ko/cursor-setup.md) | Cursor에서 GPT-5.6 / Claude 4.8 / Gemini 사용 |
+| [Grok Build 가이드](docs/ko/grok-build-guide.md) | xAI Grok Build에 Levolink AI 커스텀 모델 설정 |
+| [OpenCode 가이드](docs/ko/opencode-guide.md) | OpenCode 오픈소스 에이전트에 Levolink AI 설정 |
+| [OpenClaw 가이드](docs/ko/openclaw-guide.md) | OpenClaw Agent 런타임에 Levolink AI 설정 |
+| [CC Switch 가이드](docs/ko/cc-switch-guide.md) | 여러 AI 도구의 Levolink AI 설정 통합 관리 |
+| [Dify 연동 가이드](docs/ko/dify-integration.md) | Dify와 Levolink AI 연결 |
 | [모델 선택 가이드](docs/ko/model-selection-guide.md) | 228개 모델 중 무엇을 선택할까? 용도 및 예산별 |
 | [사기 감지 가이드](docs/ko/fraud-detection-guide.md) | API 프록시에서 모델 치환을 감지하는 5가지 방법 |
-| [Codex 설정 가이드](docs/ko/codex-setup.md) | 중국에서 OpenAI Codex CLI 설정 |
-| [Dify 연동 가이드](docs/ko/dify-integration.md) | Dify와 Levolink AI 연결 |
 | [비용 계산기 가이드](docs/ko/cost-calculator-guide.md) | API 비용 추정 및 지출 최적화 |
 
 ---

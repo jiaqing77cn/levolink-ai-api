@@ -367,11 +367,17 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 | 教程 | 内容 |
 |------|------|
 | [Claude Code 接入教程](docs/claude-code-guide.md) | 国内使用 Claude Code 的完整配置方案 |
+| [Claude Desktop 接入教程](docs/claude-desktop-guide.md) | Claude Desktop 桌面应用配置 Levolink AI |
+| [Codex 接入教程](docs/codex-setup.md) | OpenAI Codex CLI 国内配置方法 |
+| [Gemini CLI 接入教程](docs/gemini-cli-guide.md) | Gemini CLI 配置 Levolink AI 调用 Gemini 模型 |
 | [Cursor IDE 配置教程](docs/cursor-setup.md) | Cursor 中接入 GPT-5.6 / Claude 4.8 / Gemini |
+| [Grok Build 接入教程](docs/grok-build-guide.md) | xAI Grok Build 配置自定义模型接入 Levolink AI |
+| [OpenCode 接入教程](docs/opencode-guide.md) | OpenCode 开源编程助手配置 Levolink AI |
+| [OpenClaw 接入教程](docs/openclaw-guide.md) | OpenClaw Agent 运行时配置 Levolink AI |
+| [CC Switch 接入教程](docs/cc-switch-guide.md) | 统一管理多个 AI 工具的 Levolink AI 配置 |
+| [Dify 接入教程](docs/dify-integration.md) | Dify 对接 Levolink AI 完整流程 |
 | [模型选择指南](docs/model-selection-guide.md) | 228 个模型怎么选？按场景/预算推荐 |
 | [中转站掺水检测指南](docs/fraud-detection-guide.md) | 5 种方法检测中转站是否用低端模型冒充 |
-| [Codex 接入教程](docs/codex-setup.md) | OpenAI Codex CLI 国内配置方法 |
-| [Dify 接入教程](docs/dify-integration.md) | Dify 对接 Levolink AI 完整流程 |
 | [成本计算器使用指南](docs/cost-calculator-guide.md) | 估算 API 调用成本，优化开支 |
 
 ---

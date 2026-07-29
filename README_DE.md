@@ -365,13 +365,19 @@ Ja. Settings -> Identitätsverifizierung -> Wallet -> Rechnung. E-Rechnung wird 
 
 | Leitfaden | Inhalt |
 |-----------|--------|
-| [Claude Code Setup Guide](docs/de/claude-code-guide.md) | Vollständige Claude-Code-Konfiguration für China |
-| [Cursor IDE Setup](docs/de/cursor-setup.md) | GPT-5.6 / Claude 4.8 / Gemini in Cursor verwenden |
-| [Model Selection Guide](docs/de/model-selection-guide.md) | Welches der 228 Modelle wählen? Nach Anwendungsfall & Budget |
-| [Fraud Detection Guide](docs/de/fraud-detection-guide.md) | 5 Methoden zur Erkennung von Modellaustausch bei API-Proxys |
-| [Codex Setup Guide](docs/de/codex-setup.md) | OpenAI Codex CLI-Konfiguration für China |
-| [Dify Integration Guide](docs/de/dify-integration.md) | Dify mit Levolink AI verbinden |
-| [Cost Calculator Guide](docs/de/cost-calculator-guide.md) | API-Kosten schätzen und Ausgaben optimieren |
+| [Claude Code Anleitung](docs/de/claude-code-guide.md) | Vollständige Claude-Code-Konfiguration für China |
+| [Claude Desktop Anleitung](docs/de/claude-desktop-guide.md) | Claude Desktop mit Levolink AI konfigurieren |
+| [Codex Anleitung](docs/de/codex-setup.md) | OpenAI Codex CLI-Konfiguration für China |
+| [Gemini CLI Anleitung](docs/de/gemini-cli-guide.md) | Gemini CLI mit Levolink AI für Gemini-Modelle |
+| [Cursor IDE Anleitung](docs/de/cursor-setup.md) | GPT-5.6 / Claude 4.8 / Gemini in Cursor verwenden |
+| [Grok Build Anleitung](docs/de/grok-build-guide.md) | xAI Grok Build mit Levolink AI Custom-Modellen |
+| [OpenCode Anleitung](docs/de/opencode-guide.md) | OpenCode Open-Source-Agent mit Levolink AI |
+| [OpenClaw Anleitung](docs/de/openclaw-guide.md) | OpenClaw Agent-Runtime mit Levolink AI |
+| [CC Switch Anleitung](docs/de/cc-switch-guide.md) | Unified Konfigurationsmanagement für mehrere AI-Tools |
+| [Dify Integrationsleitfaden](docs/de/dify-integration.md) | Dify mit Levolink AI verbinden |
+| [Modell-Auswahlleitfaden](docs/de/model-selection-guide.md) | Welches der 228 Modelle wählen? Nach Anwendungsfall & Budget |
+| [Fraud Detection Leitfaden](docs/de/fraud-detection-guide.md) | 5 Methoden zur Erkennung von Modellaustausch bei API-Proxys |
+| [Kostenrechner-Anleitung](docs/de/cost-calculator-guide.md) | API-Kosten schätzen und Ausgaben optimieren |
 
 ---
 

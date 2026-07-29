@@ -365,12 +365,18 @@ Sí. Ajustes -> Verificación de identidad -> Billetera -> Factura. Factura elec
 
 | Guía | Contenido |
 |-------|---------|
-| [Guía de configuración de Claude Code](docs/es/claude-code-guide.md) | Configuración completa de Claude Code para China |
+| [Guía de Claude Code](docs/es/claude-code-guide.md) | Configuración completa de Claude Code para China |
+| [Guía de Claude Desktop](docs/es/claude-desktop-guide.md) | Configurar Claude Desktop con Levolink AI |
+| [Guía de Codex](docs/es/codex-setup.md) | Configuración de OpenAI Codex CLI para China |
+| [Guía de Gemini CLI](docs/es/gemini-cli-guide.md) | Gemini CLI con Levolink AI para modelos Gemini |
 | [Configuración de Cursor IDE](docs/es/cursor-setup.md) | Usar GPT-5.6 / Claude 4.8 / Gemini en Cursor |
+| [Guía de Grok Build](docs/es/grok-build-guide.md) | xAI Grok Build con modelos personalizados de Levolink AI |
+| [Guía de OpenCode](docs/es/opencode-guide.md) | OpenCode agente open-source con Levolink AI |
+| [Guía de OpenClaw](docs/es/openclaw-guide.md) | OpenClaw Agent runtime con Levolink AI |
+| [Guía de CC Switch](docs/es/cc-switch-guide.md) | Gestión unificada de configuración para múltiples herramientas IA |
+| [Guía de integración con Dify](docs/es/dify-integration.md) | Conectar Dify con Levolink AI |
 | [Guía de selección de modelos](docs/es/model-selection-guide.md) | ¿Cuál de los 228 modelos elegir? Por caso de uso y presupuesto |
 | [Guía de detección de fraude](docs/es/fraud-detection-guide.md) | 5 métodos para detectar sustitución de modelos en proxies de API |
-| [Guía de configuración de Codex](docs/es/codex-setup.md) | Configuración de OpenAI Codex CLI para China |
-| [Guía de integración con Dify](docs/es/dify-integration.md) | Conectar Dify con Levolink AI |
 | [Guía de calculadora de costos](docs/es/cost-calculator-guide.md) | Estima costos de API y optimiza el gasto |
 
 ---

@@ -366,11 +366,17 @@ Yes. Settings -> Identity Verification -> Wallet -> Invoice. E-invoice issued wi
 | Guide | Content |
 |-------|---------|
 | [Claude Code Setup Guide](docs/en/claude-code-guide.md) | Complete Claude Code configuration for China |
+| [Claude Desktop Guide](docs/en/claude-desktop-guide.md) | Configure Claude Desktop with Levolink AI |
+| [Codex Setup Guide](docs/en/codex-setup.md) | OpenAI Codex CLI configuration for China |
+| [Gemini CLI Guide](docs/en/gemini-cli-guide.md) | Gemini CLI with Levolink AI for Gemini models |
 | [Cursor IDE Setup](docs/en/cursor-setup.md) | Use GPT-5.6 / Claude 4.8 / Gemini in Cursor |
+| [Grok Build Guide](docs/en/grok-build-guide.md) | xAI Grok Build with custom Levolink AI models |
+| [OpenCode Guide](docs/en/opencode-guide.md) | OpenCode open-source agent with Levolink AI |
+| [OpenClaw Guide](docs/en/openclaw-guide.md) | OpenClaw Agent runtime with Levolink AI |
+| [CC Switch Guide](docs/en/cc-switch-guide.md) | Unified config management for multiple AI tools |
+| [Dify Integration Guide](docs/en/dify-integration.md) | Connect Dify with Levolink AI |
 | [Model Selection Guide](docs/en/model-selection-guide.md) | Which of 228 models to choose? By use case & budget |
 | [Fraud Detection Guide](docs/en/fraud-detection-guide.md) | 5 methods to detect model swapping in API proxies |
-| [Codex Setup Guide](docs/en/codex-setup.md) | OpenAI Codex CLI configuration for China |
-| [Dify Integration Guide](docs/en/dify-integration.md) | Connect Dify with Levolink AI |
 | [Cost Calculator Guide](docs/en/cost-calculator-guide.md) | Estimate API costs and optimize spending |
 
 ---
