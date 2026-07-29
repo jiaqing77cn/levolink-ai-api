@@ -14,6 +14,8 @@ Grok Build は xAI が提供するターミナル AI プログラミングアシ
 
 ```bash
 curl -fsSL https://x.ai/cli/install.sh | bash
+
+> ⚠️ インストール前にスクリプト内容を確認することを推奨: curl -fsSL https://x.ai/cli/install.sh | less
 ```
 
 **Windows (PowerShell)：**

@@ -14,6 +14,8 @@ OpenCode はオープンソースの AI プログラミングアシスタント�
 # 推奨インストール方法
 curl -fsSL https://opencode.ai/install | bash
 
+> ⚠️ インストール前にスクリプト内容を確認することを推奨
+
 # または npm 経由
 npm install -g opencode-ai
 ```

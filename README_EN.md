@@ -310,10 +310,10 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 | | [Levolink AI](https://ai.levolink.com) | OpenRouter | SiliconFlow | Other Proxies | Self-Built |
 |--|-------------|-----------|-------------|---------------|------------|
-| Model count | **500+** | ~400 | ~200 | ~100 | Manual |
+| Model count | **228+** | ~400 | ~200 | ~100 | Manual |
 | Group options | **33 groups** | None (per-provider) | None | 1-3 | - |
 | China CDN | ✅ Multi-node | ❌ No China nodes | ✅ Single | ✅ | ❌ |
-| Min top-up | **1 yuan** | ~$5 (~35 yuan) | 50 yuan | 20 yuan | - |
+| Min top-up | **¥1** | ~¥35 | ¥50 | ¥20 | - |
 | Pay-as-you-go | ✅ | ✅ | ✅ | ✅ | ❌ |
 | Claude Code ready | ✅ | ✅ | ✅ | ✅ | ❌ |
 | OpenAI compatible | ✅ | ✅ | ✅ | ✅ | Needs adapter |
@@ -327,11 +327,11 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 **Are responses identical to the official API?**
 
-Yes. Levolink AI only forwards requests to official models - responses are byte-for-byte identical.
+Yes. Levolink AI only forwards requests to official models - responses are consistent with the official API.
 
 **Can my account get banned?**
 
-No. You use Levolink AI's key, not the official account system - no ban risk.
+No. You use Levolink AI's key, not the official account system - your official account is not at risk.
 
 **What's the difference between groups?**
 
@@ -395,3 +395,7 @@ Yes. Settings -> Identity Verification -> Wallet -> Invoice. E-invoice issued wi
 ## 📜 License
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
+
+## 📢 Trademark Notice
+
+GPT and OpenAI are trademarks of OpenAI. Claude is a trademark of Anthropic PBC. Gemini is a trademark of Google LLC. DeepSeek is a trademark of DeepSeek. This repository describes compatibility only and does not imply official affiliation with or endorsement by these companies.

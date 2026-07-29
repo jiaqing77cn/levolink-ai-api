@@ -67,7 +67,7 @@ Seis dimensiones para evaluar al elegir un proxy de API de IA:
 # Método 1: Prueba de capacidad - usa prompts de razonamiento
 prompt = "A farmer has 17 sheep. All but 9 die. How many are left?"
 # GPT/Claude respuesta correcta: 9
-# Modelos de gama baja часто se equivocan: 8
+# Modelos de gama baja a menudo se equivocan: 8
 
 # Método 2: Prueba de contexto largo
 # Envía un texto largo de 50K+ tokens, pregunta sobre detalles al final
@@ -310,10 +310,10 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 | | [Levolink AI](https://ai.levolink.com) | OpenRouter | SiliconFlow | Otros proxies | Autoconstruido |
 |--|-------------|-----------|-------------|---------------|------------|
-| Número de modelos | **500+** | ~400 | ~200 | ~100 | Manual |
+| Número de modelos | **228+** | ~400 | ~200 | ~100 | Manual |
 | Opciones de grupos | **33 grupos** | Ninguna (por proveedor) | Ninguna | 1-3 | - |
 | CDN en China | ✅ Multi-nodo | ❌ Sin nodos en China | ✅ Único | ✅ | ❌ |
-| Recarga mínima | **1 yuan** | ~$5 (~35 yuan) | 50 yuan | 20 yuan | - |
+| Recarga mínima | **¥1** | ~¥35 | ¥50 | ¥20 | - |
 | Pago por uso | ✅ | ✅ | ✅ | ✅ | ❌ |
 | Claude Code ready | ✅ | ✅ | ✅ | ✅ | ❌ |
 | OpenAI compatible | ✅ | ✅ | ✅ | ✅ | Necesita adaptador |
@@ -327,11 +327,11 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 **¿Las respuestas son idénticas a las de la API oficial?**
 
-Sí. Levolink AI solo reenvía las solicitudes a los modelos oficiales: las respuestas son idénticas byte a byte.
+Sí. Levolink AI solo reenvía las solicitudes a los modelos oficiales: las respuestas son consistentes con la API oficial.
 
 **¿Mi cuenta puede ser baneada?**
 
-No. Usas la clave de Levolink AI, no el sistema de cuentas oficial, sin riesgo de baneo.
+No. Usas la clave de Levolink AI, no el sistema de cuentas oficial, tu cuenta oficial no está en riesgo.
 
 **¿Cuál es la diferencia entre los grupos?**
 
@@ -395,3 +395,7 @@ Sí. Ajustes -> Verificación de identidad -> Billetera -> Factura. Factura elec
 ## 📜 Licencia
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
+
+## 📢 Aviso de Marcas Registradas
+
+GPT y OpenAI son marcas registradas de OpenAI. Claude es una marca registrada de Anthropic PBC. Gemini es una marca registrada de Google LLC. DeepSeek es una marca registrada de DeepSeek. Este repositorio describe únicamente la compatibilidad y no implica afiliación oficial ni respaldo por parte de estas empresas.

@@ -14,6 +14,8 @@ OpenCode 是开源的 AI 编程助手（180K+ Stars），支持终端、桌面�
 # 推荐安装方式
 curl -fsSL https://opencode.ai/install | bash
 
+> ⚠️ 安装前建议先审查脚本内容
+
 # 或通过 npm
 npm install -g opencode-ai
 ```

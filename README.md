@@ -311,10 +311,10 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 | 维度 | Levolink AI | OpenRouter | 硅基流动 | 神马中转 | 自建代理 |
 |------|------------|-----------|---------|---------|---------|
-| 模型数量 | **500+** | ~400 | ~200 | ~100 | 需手动维护 |
+| 模型数量 | **228+** | ~400 | ~200 | ~100 | 需手动维护 |
 | 分组选择 | **33 个分组** | 无（按供应商定价） | 无分组 | 1-3 个 | - |
 | 国内 CDN 加速 | ✅ 多节点 | ❌ 无国内节点 | ✅ 单节点 | ✅ | ❌ |
-| 最低充值 | **1 元** | ~$5（~35 元） | 50 元 | 20 元 | - |
+| 最低充值 | **¥1** | ~¥35 | ¥50 | ¥20 | - |
 | 按量计费 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | Claude Code 兼容 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | OpenAI 格式 | ✅ | ✅ | ✅ | ✅ | 需适配 |
@@ -328,11 +328,11 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 **响应内容和官方一致吗？**
 
-完全一致。Levolink AI 仅做请求转发，底层调用官方模型，响应内容与官方 API 完全相同。
+高度一致。Levolink AI 仅做请求转发，底层调用官方模型，响应内容与官方 API 保持一致。
 
 **会被封号吗？**
 
-不会。你使用的是 Levolink AI 的 Key，不走官方账号体系，无封号风险。
+不会。你使用的是 Levolink AI 的 Key，不走官方账号体系，不涉及你的官方账号封禁风险。
 
 **不同分组有什么区别？**
 
@@ -396,3 +396,7 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ## License
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
+
+## 📢 商标声明
+
+GPT、OpenAI 是 OpenAI 的商标。Claude 是 Anthropic PBC 的商标。Gemini 是 Google LLC 的商标。DeepSeek 是 DeepSeek 的商标。本仓库仅描述兼容性，不暗示与上述公司的官方关联或背书。

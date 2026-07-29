@@ -14,6 +14,8 @@ OpenCode ist ein Open-Source-AI-Programmierassistent (180K+ Stars) und unterstü
 # Empfohlene Installation
 curl -fsSL https://opencode.ai/install | bash
 
+> ⚠️ Skript vor der Installation überprüfen
+
 # Oder über npm
 npm install -g opencode-ai
 ```

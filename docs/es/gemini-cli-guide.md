@@ -39,7 +39,7 @@ gemini
 | Uso diario | `gemini-2.5-flash` | gemini-cli | 1.0x |
 | Tareas ligeras | `gemini-2.5-flash-lite` | gemini-cli | 1.0x |
 | Tareas complejas | `gemini-2.5-pro` | gemini-cli | 1.0x |
-| Generación de imágenes | `gemini-3-pro-image` | 优质gemini | 2.4x |
+| Generación de imágenes | `gemini-3-pro-image` | Gemini Premium | 2.4x |
 
 ## Especificar Modelo
 

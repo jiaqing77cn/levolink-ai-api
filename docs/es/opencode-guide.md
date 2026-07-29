@@ -14,6 +14,8 @@ OpenCode es un asistente de programación con IA de código abierto (180K+ Stars
 # Método de instalación recomendado
 curl -fsSL https://opencode.ai/install | bash
 
+> ⚠️ Se recomienda revisar el script antes de instalar
+
 # O a través de npm
 npm install -g opencode-ai
 ```

@@ -39,7 +39,7 @@ gemini
 | 일상 사용 | `gemini-2.5-flash` | gemini-cli | 1.0x |
 | 경량 작업 | `gemini-2.5-flash-lite` | gemini-cli | 1.0x |
 | 복잡한 작업 | `gemini-2.5-pro` | gemini-cli | 1.0x |
-| 이미지 생성 | `gemini-3-pro-image` | 우량gemini | 2.4x |
+| 이미지 생성 | `gemini-3-pro-image` | 프리미엄 Gemini | 2.4x |
 
 ## 모델 지정
 

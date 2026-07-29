@@ -32,7 +32,7 @@ print(resp.choices[0].message.content)
 
 ### Methode 2: Langen Kontext testen
 
-Hochwertige Modelle unterstützen 200K+ Token Kontext, minderwertige Modelle通常 nur 8K-32K.
+Hochwertige Modelle unterstützen 200K+ Token Kontext, minderwertige Modelle normalerweise nur 8K-32K.
 
 ```python
 # Sende einen langen Text mit 100K+ Token, am Ende eine bestimmte Information platzieren

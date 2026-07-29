@@ -14,6 +14,8 @@ Grok Build es el asistente de programación con IA para terminal de xAI, que sop
 
 ```bash
 curl -fsSL https://x.ai/cli/install.sh | bash
+
+> ⚠️ Se recomienda revisar el script antes de instalar: curl -fsSL https://x.ai/cli/install.sh | less
 ```
 
 **Windows (PowerShell):**

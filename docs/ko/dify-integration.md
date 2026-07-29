@@ -66,7 +66,7 @@ Dify Agent + Levolink AI의 일반적인 워크플로우:
              -> GPT-5.6 Sol (응답 생성)
 ```
 
-하나의 API Key로 모든 모델을调度할 수 있어, 여러 계정이 필요 없습니다.
+하나의 API Key로 모든 모델을 제어할 수 있어, 여러 계정이 필요 없습니다.
 
 ## Docker로 배포한 Dify
 

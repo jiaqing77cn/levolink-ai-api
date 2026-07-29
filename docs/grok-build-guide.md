@@ -14,6 +14,8 @@ Grok Build 是 xAI 推出的终端 AI 编程助手，支持交互式 TUI、无�
 
 ```bash
 curl -fsSL https://x.ai/cli/install.sh | bash
+
+> ⚠️ 安装前建议先审查脚本内容：curl -fsSL https://x.ai/cli/install.sh | less
 ```
 
 **Windows (PowerShell)：**

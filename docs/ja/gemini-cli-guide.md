@@ -39,7 +39,7 @@ gemini
 | 日常使用 | `gemini-2.5-flash` | gemini-cli | 1.0x |
 | 軽量タスク | `gemini-2.5-flash-lite` | gemini-cli | 1.0x |
 | 複雑なタスク | `gemini-2.5-pro` | gemini-cli | 1.0x |
-| 画像生成 | `gemini-3-pro-image` | 优质gemini | 2.4x |
+| 画像生成 | `gemini-3-pro-image` | プレミアムGemini | 2.4x |
 
 ## モデルの指定
 

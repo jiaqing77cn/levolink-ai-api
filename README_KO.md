@@ -310,10 +310,10 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 | | [Levolink AI](https://ai.levolink.com) | OpenRouter | SiliconFlow | 기타 프록시 | 자체 구축 |
 |--|-------------|-----------|-------------|---------------|------------|
-| 모델 수 | **500+** | ~400 | ~200 | ~100 | 수동 |
+| 모델 수 | **228+** | ~400 | ~200 | ~100 | 수동 |
 | 그룹 옵션 | **33개 그룹** | 없음 (공급자별) | 없음 | 1-3개 | - |
 | 중국 CDN | ✅ 다중 노드 | ❌ 중국 노드 없음 | ✅ 단일 | ✅ | ❌ |
-| 최소 충전 | **1위안** | ~$5 (~35위안) | 50위안 | 20위안 | - |
+| 최소 충전 | **¥1** | ~¥35 | ¥50 | ¥20 | - |
 | 사용량 기반 결제 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | Claude Code 지원 | ✅ | ✅ | ✅ | ✅ | ❌ |
 | OpenAI Compatible | ✅ | ✅ | ✅ | ✅ | 어댑터 필요 |
@@ -327,11 +327,11 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 
 **응답이 공식 API와 동일한가요?**
 
-네. Levolink AI는 요청을 공식 모델로 전달하기만 하므로 응답은 바이트 단위로 완전히 동일합니다.
+네. Levolink AI는 요청을 공식 모델로 전달하기만 하므로 응답은 공식 API와 일치합니다.
 
 **계정이 정지될 위험이 있나요?**
 
-아니요. 공식 계정 시스템이 아닌 Levolink AI의 키를 사용하므로 정지 위험이 없습니다.
+아니요. 공식 계정 시스템이 아닌 Levolink AI의 키를 사용하므로 공식 계정이 정지될 위험이 없습니다.
 
 **그룹 간 차이는 무엇인가요?**
 
@@ -395,3 +395,7 @@ export GEMINI_API_BASE="https://ai.levolink.com/v1"
 ## 📜 라이선스
 
 MIT License · Copyright (c) 2026 [Levolink AI](https://ai.levolink.com)
+
+## 📢 상표 표시
+
+GPT 및 OpenAI는 OpenAI의 상표입니다. Claude는 Anthropic PBC의 상표입니다. Gemini는 Google LLC의 상표입니다. DeepSeek는 DeepSeek의 상표입니다. 이 리포지토리는 호환성 설명만을 목적으로 하며, 이들 기업과의 공식 제휴나 보증을 의미하지 않습니다.
