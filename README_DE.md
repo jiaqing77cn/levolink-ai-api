@@ -15,7 +15,7 @@
 
 </div>
 
-> Last updated: 2026-07-28 09:51 (UTC+8) | [中文](./README.md) | [English](./README_EN.md) | [한국어](./README_KO.md) | [日本語](./README_JA.md) | [Español](./README_ES.md) | Deutsch
+> Last updated: 2026-07-29 13:16 (UTC+8)| [中文](./README.md) | [English](./README_EN.md) | [한국어](./README_KO.md) | [日本語](./README_JA.md) | [Español](./README_ES.md) | Deutsch
 
 ---
 
@@ -91,21 +91,21 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 <!-- GPT_PRICE_TABLE_START -->
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
-| `gpt-5-codex` | enterprise-a… | 0.35x | $0.15 | $1.22 | Codex专属 | 0.8x | $0.35 | $2.80 | 8x |
-| `gpt-5-mini` | enterprise-a… | 0.35x | $0.03 | $0.24 | 特供-优质gpt | 5.6x | $0.49 | $3.92 | 8x |
-| `gpt-5-mini-2025-08-07` | enterprise-a… | 0.35x | $0.03 | $0.24 | 特供-优质gpt | 5.6x | $0.49 | $3.92 | 8x |
-| `gpt-5-nano` | enterprise-a… | 0.35x | $0.01 | $0.05 | 特供-优质gpt | 5.6x | $0.10 | $0.78 | 8x |
-| `gpt-5-nano-2025-08-07` | enterprise-a… | 0.35x | $0.01 | $0.05 | 特供-优质gpt | 5.6x | $0.10 | $0.78 | 8x |
-| `gpt-5-pro` | enterprise-a… | 0.35x | $1.84 | $14.70 | 特供-优质gpt | 5.6x | $29.40 | $235.20 | 8x |
-| `gpt-5.1-codex` | 特价9折 | 0.54x | $0.36 | $2.92 | Codex专属 | 0.8x | $0.54 | $4.32 | 8x |
-| `gpt-5.1-codex-max` | 特价9折 | 0.54x | $0.36 | $2.92 | 纯AZ | 1.5x | $1.01 | $8.10 | 8x |
-| `gpt-5.1-codex-mini` | enterprise-a… | 0.35x | $0.03 | $0.24 | 纯AZ | 1.5x | $0.13 | $1.05 | 8x |
-| `gpt-5.2-chat` | enterprise-a… | 0.35x | $0.21 | $1.71 | 特供-优质gpt | 5.6x | $3.43 | $27.44 | 8x |
-| `gpt-5.2-chat-latest` | enterprise-a… | 0.35x | $0.21 | $1.71 | 特供-优质gpt | 5.6x | $3.43 | $27.44 | 8x |
-| `gpt-5.2-codex` | 特价9折 | 0.54x | $0.51 | $4.08 | 特供-优质gpt | 5.6x | $5.29 | $42.34 | 8x |
-| `gpt-5.3-chat-latest` | enterprise-a… | 0.35x | $0.21 | $1.71 | 特供-优质gpt | 5.6x | $3.43 | $27.44 | 8x |
-| `gpt-5.3-codex` | 特价9折 | 0.54x | $0.51 | $4.08 | 特供-优质gpt | 5.6x | $5.29 | $42.34 | 8x |
-| `gpt-5.3-codex-spark` | Codex专属 | 0.8x | $1.12 | $8.96 | Premium OpenAI | 8x | $11.20 | $89.60 | 8x |
+| `gpt-5-codex` | enterprise-a… | 0.35x | $0.44 | $3.50 | Codex专属 | 0.8x | $1.00 | $8.00 | 8x |
+| `gpt-5-mini` | enterprise-a… | 0.35x | $0.09 | $0.70 | 特供-优质gpt | 5.6x | $1.40 | $11.20 | 8x |
+| `gpt-5-mini-2025-08-07` | enterprise-a… | 0.35x | $0.09 | $0.70 | 特供-优质gpt | 5.6x | $1.40 | $11.20 | 8x |
+| `gpt-5-nano` | enterprise-a… | 0.35x | $0.02 | $0.14 | 特供-优质gpt | 5.6x | $0.28 | $2.24 | 8x |
+| `gpt-5-nano-2025-08-07` | enterprise-a… | 0.35x | $0.02 | $0.14 | 特供-优质gpt | 5.6x | $0.28 | $2.24 | 8x |
+| `gpt-5-pro` | enterprise-a… | 0.35x | $5.25 | $42.00 | 特供-优质gpt | 5.6x | $84.00 | $672.00 | 8x |
+| `gpt-5.1-codex` | 特价9折 | 0.54x | $0.68 | $5.40 | Codex专属 | 0.8x | $1.00 | $8.00 | 8x |
+| `gpt-5.1-codex-max` | 特价9折 | 0.54x | $0.68 | $5.40 | 纯AZ | 1.5x | $1.88 | $15.00 | 8x |
+| `gpt-5.1-codex-mini` | enterprise-a… | 0.35x | $0.09 | $0.70 | 纯AZ | 1.5x | $0.38 | $3.00 | 8x |
+| `gpt-5.2-chat` | enterprise-a… | 0.35x | $0.61 | $4.90 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
+| `gpt-5.2-chat-latest` | enterprise-a… | 0.35x | $0.61 | $4.90 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
+| `gpt-5.2-codex` | 特价9折 | 0.54x | $0.95 | $7.56 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
+| `gpt-5.3-chat-latest` | enterprise-a… | 0.35x | $0.61 | $4.90 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
+| `gpt-5.3-codex` | 特价9折 | 0.54x | $0.95 | $7.56 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
+| `gpt-5.3-codex-spark` | Codex专属 | 0.8x | $1.40 | $11.20 | Premium OpenAI | 8x | $14.00 | $112.00 | 8x |
 
 <!-- GPT_PRICE_TABLE_END -->
 
@@ -116,12 +116,12 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
 | `claude-fable-5` | default | 1x | $10.00 | $50.00 | Claude Code专… | 2.4x | $24.00 | $120.00 | 5x |
 | `claude-haiku-4-5-20251001` | default | 1x | $1.00 | $5.00 | Claude Code专… | 2.4x | $2.40 | $12.00 | 5x |
-| `claude-opus-4-1-20250805` | default | 1x | $15.00 | $75.00 | Claude Code专… | 2.4x | $36.00 | $180.00 | 5x |
+| `claude-opus-4-1-20250805` | default | 1x | $15.00 | $75.00 | 官转克劳德1 | 4x | $60.00 | $300.00 | 5x |
 | `claude-opus-4-5-20251101` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
 | `claude-opus-4-6` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
 | `claude-opus-4-7` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
 | `claude-opus-4-8` | default | 1x | $5.00 | $25.00 | Claude Code专… | 2.4x | $12.00 | $60.00 | 5x |
-| `claude-sonnet-4-20250514` | default | 1x | $3.00 | $15.00 | Claude Code专… | 2.4x | $7.20 | $36.00 | 5x |
+| `claude-sonnet-4-20250514` | default | 1x | $3.00 | $15.00 | 官转克劳德1 | 4x | $12.00 | $60.00 | 5x |
 | `claude-sonnet-4-5-20250929` | default | 1x | $3.00 | $15.00 | Claude Code专… | 2.4x | $7.20 | $36.00 | 5x |
 | `claude-sonnet-4-6` | default | 1x | $3.00 | $15.00 | Claude Code专… | 2.4x | $7.20 | $36.00 | 5x |
 | `claude-sonnet-5` | default | 1x | $2.00 | $10.00 | Claude Code专… | 2.4x | $4.80 | $24.00 | 5x |
@@ -133,7 +133,7 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 <!-- GEMINI_PRICE_TABLE_START -->
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
-| `gemini-2.0-flash-lite` | 官转gemini | 3.6x | $0.97 | $3.89 | Premium Gemini | 6x | $1.62 | $6.48 | 4x |
+| `gemini-2.0-flash-lite` | 官转gemini | 3.6x | $0.27 | $1.08 | Premium Gemini | 6x | $0.45 | $1.80 | 4x |
 | `gemini-2.5-flash` | gemini-cli | 1x | $0.30 | $2.50 | Premium Gemini | 6x | $1.80 | $15.01 | 8.34x |
 | `gemini-2.5-flash-image` | 优质gemini | 2.4x | $0.00 | $0.00 | Premium Gemini | 6x | $0.00 | $0.00 | 0x |
 | `gemini-2.5-flash-lite` | gemini-cli | 1x | $0.10 | $0.40 | Premium Gemini | 6x | $0.60 | $2.40 | 4x |
@@ -149,14 +149,14 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 <!-- DEEPSEEK_PRICE_TABLE_START -->
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
-| `deepseek-r1` | uchat_qwen | 0.6x | $1.44 | $5.76 | 纯AZ | 1.5x | $3.60 | $14.40 | 4x |
-| `deepseek-r1-0528` | uchat_qwen | 0.6x | $1.44 | $5.76 | 纯AZ | 1.5x | $3.60 | $14.40 | 4x |
-| `deepseek-r1-2025-01-20` | uchat_qwen | 0.6x | $1.44 | $5.76 | 纯AZ | 1.5x | $3.60 | $14.40 | 4x |
-| `deepseek-r1-250120` | uchat_qwen | 0.6x | $1.44 | $5.76 | 纯AZ | 1.5x | $3.60 | $14.40 | 4x |
-| `deepseek-r1-250528` | uchat_qwen | 0.6x | $1.44 | $5.76 | 纯AZ | 1.5x | $3.60 | $14.40 | 4x |
-| `deepseek-r1-distill-qwen-32b` | 特供-国产4折 | 0.8x | $1.28 | $3.84 | 纯AZ | 1.5x | $2.40 | $7.20 | 3x |
-| `deepseek-r1-distill-qwen-7b` | 特供-国产4折 | 0.8x | $0.32 | $0.64 | 纯AZ | 1.5x | $0.60 | $1.20 | 2x |
-| `deepseek-reasoner` | uchat_qwen | 0.6x | $1.44 | $5.76 | 纯AZ | 1.5x | $3.60 | $14.40 | 4x |
+| `deepseek-r1` | uchat_qwen | 0.6x | $2.40 | $9.60 | 纯AZ | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-0528` | uchat_qwen | 0.6x | $2.40 | $9.60 | 纯AZ | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-2025-01-20` | uchat_qwen | 0.6x | $2.40 | $9.60 | 纯AZ | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-250120` | uchat_qwen | 0.6x | $2.40 | $9.60 | 纯AZ | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-250528` | uchat_qwen | 0.6x | $2.40 | $9.60 | 纯AZ | 1.5x | $6.00 | $24.00 | 4x |
+| `deepseek-r1-distill-qwen-32b` | 特供-国产4折 | 0.8x | $1.60 | $4.80 | 纯AZ | 1.5x | $3.00 | $9.00 | 3x |
+| `deepseek-r1-distill-qwen-7b` | 特供-国产4折 | 0.8x | $0.40 | $0.80 | 纯AZ | 1.5x | $0.75 | $1.50 | 2x |
+| `deepseek-reasoner` | uchat_qwen | 0.6x | $2.40 | $9.60 | 纯AZ | 1.5x | $6.00 | $24.00 | 4x |
 
 <!-- DEEPSEEK_PRICE_TABLE_END -->
 
@@ -165,18 +165,18 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 <!-- CN_MODEL_PRICE_TABLE_START -->
 | Model | Cheapest Group | Ratio | Input($/M) | Output($/M) | Premium Group | Ratio | Input($/M) | Output($/M) | Out/In |
 |-------|---------------|-------|-----------|------------|--------------|-------|-----------|------------|--------|
-| `qwen3-max` | 限时特价 | 0.6x | $0.90 | $3.60 | 纯AZ | 1.5x | $2.25 | $9.00 | 4x |
-| `qwen3-max-2026-01-23` | 阿里4折 | 0.8x | $1.60 | $6.40 | 纯AZ | 1.5x | $3.00 | $12.00 | 4x |
-| `qwen3-coder` | 特供-国产4折 | 0.8x | $3.84 | $15.36 | 纯AZ | 1.5x | $7.20 | $28.80 | 4x |
-| `qwen3-coder-plus` | 限时特价 | 0.6x | $1.44 | $5.76 | 特供-HC1 | 1.32x | $3.17 | $12.67 | 4x |
+| `qwen3-max` | 限时特价 | 0.6x | $1.50 | $6.00 | 纯AZ | 1.5x | $3.75 | $15.00 | 4x |
+| `qwen3-max-2026-01-23` | 阿里4折 | 0.8x | $2.00 | $8.00 | 纯AZ | 1.5x | $3.75 | $15.00 | 4x |
+| `qwen3-coder` | 特供-国产4折 | 0.8x | $4.80 | $19.20 | 纯AZ | 1.5x | $9.00 | $36.00 | 4x |
+| `qwen3-coder-plus` | 限时特价 | 0.6x | $2.40 | $9.60 | 特供-HC1 | 1.32x | $5.28 | $21.12 | 4x |
 | `qwen3.6-plus` | default | 1x | $2.00 | $12.00 | 纯AZ | 1.5x | $3.00 | $18.00 | 6x |
-| `qwen3.7-max` | 限时特价 | 0.6x | $4.32 | $12.96 | 纯AZ | 1.5x | $10.80 | $32.40 | 3x |
-| `glm-4.6` | 限时特价 | 0.6x | $0.72 | $2.88 | 纯AZ | 1.5x | $1.80 | $7.20 | 4x |
-| `glm-4.5` | 限时特价 | 0.6x | $0.58 | $2.30 | 纯AZ | 1.5x | $1.44 | $5.76 | 4x |
-| `glm-4.5-air` | 限时特价 | 0.6x | $0.29 | $2.16 | 纯AZ | 1.5x | $0.72 | $5.40 | 7.5x |
-| `kimi-k2` | enterprise-a… | 0.45x | $0.81 | $3.24 | 特供-优质gpt | 5.6x | $10.08 | $40.32 | 4x |
-| `kimi-k2.5` | 特供-国产4折 | 0.8x | $2.56 | $13.44 | 纯AZ | 1.5x | $4.80 | $25.20 | 5.25x |
-| `kimi-k3` | 纯AZ | 1.5x | $45.00 | $225.00 | 官转 | 3x | $90.00 | $450.00 | 5x |
+| `qwen3.7-max` | 限时特价 | 0.6x | $7.20 | $21.60 | 纯AZ | 1.5x | $18.00 | $54.00 | 3x |
+| `glm-4.6` | 限时特价 | 0.6x | $1.20 | $4.80 | 纯AZ | 1.5x | $3.00 | $12.00 | 4x |
+| `glm-4.5` | 限时特价 | 0.6x | $0.96 | $3.84 | 纯AZ | 1.5x | $2.40 | $9.60 | 4x |
+| `glm-4.5-air` | 限时特价 | 0.6x | $0.48 | $3.60 | 纯AZ | 1.5x | $1.20 | $9.00 | 7.5x |
+| `kimi-k2` | 特供-国产4折 | 0.8x | $3.20 | $12.80 | 特供-优质gpt | 5.6x | $22.40 | $89.60 | 4x |
+| `kimi-k2.5` | 特供-国产4折 | 0.8x | $3.20 | $16.80 | 纯AZ | 1.5x | $6.00 | $31.50 | 5.25x |
+| `kimi-k3` | 纯AZ | 1.5x | $30.00 | $150.00 | 官转 | 3x | $60.00 | $300.00 | 5x |
 
 <!-- CN_MODEL_PRICE_TABLE_END -->
 
