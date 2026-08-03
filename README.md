@@ -15,7 +15,7 @@
 
 </div>
 
-> 最后更新：2026-08-03 11:35 (UTC+8) | [English](./README_EN.md) | [한국어](./README_KO.md) | [日本語](./README_JA.md) | [Español](./README_ES.md) | [Deutsch](./README_DE.md) | 中文
+> 最后更新：2026-08-03 17:58 (UTC+8) | [English](./README_EN.md) | [한국어](./README_KO.md) | [日本語](./README_JA.md) | [Español](./README_ES.md) | [Deutsch](./README_DE.md) | 中文
 
 ---
 
@@ -169,7 +169,7 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 | `qwen3-max-2026-01-23` | 阿里4折 | 0.8x | $2.00 | $8.00 | 纯AZ | 1.5x | $3.75 | $15.00 | 4x |
 | `qwen3-coder` | 特供-国产4折 | 0.8x | $4.80 | $19.20 | 纯AZ | 1.5x | $9.00 | $36.00 | 4x |
 | `qwen3-coder-plus` | 限时特价 | 0.6x | $2.40 | $9.60 | 特供-HC1 | 1.32x | $5.28 | $21.12 | 4x |
-| `qwen3.6-plus` | 特供-HC1 | 1.32x | $2.64 | $15.84 | 纯AZ | 1.5x | $3.00 | $18.00 | 6x |
+| `qwen3.6-plus` | default | 1x | $2.00 | $12.00 | 纯AZ | 1.5x | $3.00 | $18.00 | 6x |
 | `qwen3.7-max` | 限时特价 | 0.6x | $7.20 | $21.60 | 纯AZ | 1.5x | $18.00 | $54.00 | 3x |
 | `glm-4.6` | 限时特价 | 0.6x | $1.20 | $4.80 | 纯AZ | 1.5x | $3.00 | $12.00 | 4x |
 | `glm-4.5` | 限时特价 | 0.6x | $0.96 | $3.84 | 纯AZ | 1.5x | $2.40 | $9.60 | 4x |
