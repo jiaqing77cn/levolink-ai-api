@@ -15,7 +15,7 @@
 
 </div>
 
-> 最后更新：2026-08-04 16:48 (UTC+8) | [English](./README_EN.md) | [한국어](./README_KO.md) | [日本語](./README_JA.md) | [Español](./README_ES.md) | [Deutsch](./README_DE.md) | 中文
+> 最后更新：2026-08-04 22:30 (UTC+8) | [English](./README_EN.md) | [한국어](./README_KO.md) | [日本語](./README_JA.md) | [Español](./README_ES.md) | [Deutsch](./README_DE.md) | 中文
 
 ---
 
@@ -99,7 +99,7 @@ prompt = "用 Python 实现一个 LRU 缓存，带 TTL 过期"
 | `gpt-5-pro` | enterprise-a… | 0.35x | $5.25 | $42.00 | 特供-优质gpt | 5.6x | $84.00 | $672.00 | 8x |
 | `gpt-5.1-codex` | 特价9折 | 0.54x | $0.68 | $5.40 | Codex专属 | 0.8x | $1.00 | $8.00 | 8x |
 | `gpt-5.1-codex-max` | 特价9折 | 0.54x | $0.68 | $5.40 | 纯AZ | 1.5x | $1.88 | $15.00 | 8x |
-| `gpt-5.1-codex-mini` | enterprise-a… | 0.35x | $0.09 | $0.70 | 纯AZ | 1.5x | $0.38 | $3.00 | 8x |
+| `gpt-5.1-codex-mini` | 特价9折 | 0.54x | $0.14 | $1.08 | 纯AZ | 1.5x | $0.38 | $3.00 | 8x |
 | `gpt-5.2-chat` | enterprise-a… | 0.35x | $0.61 | $4.90 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
 | `gpt-5.2-chat-latest` | enterprise-a… | 0.35x | $0.61 | $4.90 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |
 | `gpt-5.2-codex` | 特价9折 | 0.54x | $0.95 | $7.56 | 特供-优质gpt | 5.6x | $9.80 | $78.40 | 8x |

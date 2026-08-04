@@ -15,7 +15,7 @@
 
 </div>
 
-> Last updated: 2026-08-04 16:48 (UTC+8)| [中文](./README.md) | [English](./README_EN.md) | [한국어](./README_KO.md) | 日本語 | [Español](./README_ES.md) | [Deutsch](./README_DE.md)
+> Last updated: 2026-08-04 22:30 (UTC+8)| [中文](./README.md) | [English](./README_EN.md) | [한국어](./README_KO.md) | 日本語 | [Español](./README_ES.md) | [Deutsch](./README_DE.md)
 
 ---
 
@@ -99,7 +99,7 @@ prompt = "Implement an LRU cache with TTL expiration in Python"
 | `gpt-5-pro` | Enterprise Azure 2 | 0.35x | $5.25 | $42.00 | Special-Premium GPT | 5.6x | $84.00 | $672.00 | 8x |
 | `gpt-5.1-codex` | Sale 10% Off | 0.54x | $0.68 | $5.40 | Codex Exclusive | 0.8x | $1.00 | $8.00 | 8x |
 | `gpt-5.1-codex-max` | Sale 10% Off | 0.54x | $0.68 | $5.40 | Pure Azure | 1.5x | $1.88 | $15.00 | 8x |
-| `gpt-5.1-codex-mini` | Enterprise Azure 2 | 0.35x | $0.09 | $0.70 | Pure Azure | 1.5x | $0.38 | $3.00 | 8x |
+| `gpt-5.1-codex-mini` | Sale 10% Off | 0.54x | $0.14 | $1.08 | Pure Azure | 1.5x | $0.38 | $3.00 | 8x |
 | `gpt-5.2-chat` | Enterprise Azure 2 | 0.35x | $0.61 | $4.90 | Special-Premium GPT | 5.6x | $9.80 | $78.40 | 8x |
 | `gpt-5.2-chat-latest` | Enterprise Azure 2 | 0.35x | $0.61 | $4.90 | Special-Premium GPT | 5.6x | $9.80 | $78.40 | 8x |
 | `gpt-5.2-codex` | Sale 10% Off | 0.54x | $0.95 | $7.56 | Special-Premium GPT | 5.6x | $9.80 | $78.40 | 8x |
